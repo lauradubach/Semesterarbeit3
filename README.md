@@ -1,3 +1,10 @@
+---
+layout: default
+title: Startseite
+nav_order: 1
+permalink: /
+---
+
 # Semesterarbeit 3 | HF Cloud Native Engineer
 
 ![Titelbild](Pictures/Titelbild.jpg)

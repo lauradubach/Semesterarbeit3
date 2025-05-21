@@ -1,3 +1,10 @@
+---
+layout: default
+title: Teil 2 Konzeption
+nav_order: 3
+permalink: /
+---
+
 # Teil 2 Konzeption
 
 Nun gehen wir ins Thema Konzeption über. In diesem Kapitel wird das ganze Projekt vorbereitet. Die Ausgangslage und Anforderungen werden beschrieben, auch was das Ziel des Projektes ist, wird aufgezeigt. Die Planung wird gemacht und es werden Entscheidungen getroffen um das Projekt mit den Optimalen Tools umzusetzten.
@@ -347,6 +354,6 @@ Auf Basis dieser Analyse fiel die Entscheidung zugunsten der Ticketmaster API, d
 > (Chat GPT) [Quelle](https://chatgpt.com/share/681cb603-08cc-800e-aab1-fdd14d015179)
 
 
-> Back [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%202%20Konzeption.md)
+> Back [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%201%20Initialisierung.md)
 >
-> Next [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%201%20Initialisierung.md)
+> Next [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%203%20Realisierung.md)

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Sprint Planning
+nav_order: 6
+permalink: /
+---
+
 # Sprint Planning
 
 Entwicklung eines Microservices für Event-Empfehlungen

@@ -1,17 +1,14 @@
+---
+layout: default
+title: Teil 3 Realisieren
+nav_order: 4
+permalink: /
+---
+
 # Teil 3 Realisieren
 
 - [Teil 3 Realisieren](#teil-3-realisieren)
 - [Realisieren](#realisieren)
-  - [Implementierungsplan](#implementierungsplan)
-  - [Sprint 1](#sprint-1)
-  - [Spint Planning](#spint-planning)
-  - [Spint Review](#spint-review)
-  - [Sprint 2](#sprint-2)
-  - [Spint Planning](#spint-planning-1)
-  - [Spint Review](#spint-review-1)
-  - [Sprint 3](#sprint-3)
-  - [Spint Planning](#spint-planning-2)
-  - [Spint Review](#spint-review-2)
   - [Entwicklung](#entwicklung)
     - [Aufgetretene Probleme](#aufgetretene-probleme)
   - [Fallbacksolution](#fallbacksolution)
