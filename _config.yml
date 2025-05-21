@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 # site overview stuff
-title: HF-ITCNE24-SemArbeit_-___-______ # After "Semesterarbeit" add the number of the semester, then the Subject and the name of the project
-email: max.mustermann@contoso.ch # Add your email address here, if you want to be contacted by email
+title: Semesterarbeit 3 | HF Cloud Native Engineer # After "Semesterarbeit" add the number of the semester, then the Subject and the name of the project
+email: laura.dubach@edu.tbz.ch # Add your email address here, if you want to be contacted by email
 
 description: >- # this means to ignore newlines until another declaration. Add a short description of your project here. This will be shown in the meta tags of the HTML files.
   "Test description" 
