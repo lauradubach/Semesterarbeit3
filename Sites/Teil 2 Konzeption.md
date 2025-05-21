@@ -1,9 +1,3 @@
----
-layout: default
-title: Teil 2 Konzeption
-nav_order: 3
----
-
 # Teil 2 Konzeption
 
 Nun gehen wir ins Thema Konzeption über. In diesem Kapitel wird das ganze Projekt vorbereitet. Die Ausgangslage und Anforderungen werden beschrieben, auch was das Ziel des Projektes ist, wird aufgezeigt. Die Planung wird gemacht und es werden Entscheidungen getroffen um das Projekt mit den Optimalen Tools umzusetzten.

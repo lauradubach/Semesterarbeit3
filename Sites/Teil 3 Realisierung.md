@@ -1,10 +1,3 @@
----
-layout: default
-title: Teil 3 Realisieren
-nav_order: 4
-permalink: /
----
-
 # Teil 3 Realisieren
 
 - [Teil 3 Realisieren](#teil-3-realisieren)

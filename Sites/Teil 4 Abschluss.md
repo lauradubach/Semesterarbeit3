@@ -1,10 +1,3 @@
----
-layout: default
-title: Teil 4 Abschluss
-nav_order: 5
-permalink: /
----
-
 # Teil 4 Abschluss
 
 - [Teil 4 Abschluss](#teil-4-abschluss)

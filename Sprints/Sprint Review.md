@@ -1,10 +1,3 @@
----
-layout: default
-title: Sprint Reviews
-nav_order: 7
-permalink: /
----
-
 # Sprint Reviews
 
 ## Sprint Review 1

@@ -1,9 +1,3 @@
----
-layout: default
-title: Teil 1 Initialisierung
-nav_order: 2
----
-
 # Teil 1 Initialisierung
 
 In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hintergrund und die Relevanz des Themas. Sie definiert das Ziel der Arbeit und formuliert die zentralen Fragen. Zudem gibt die Intialisierung einen kurzen Überblick über den Aufbau der Arbeit um eine klare Orientierung zu bieten.
