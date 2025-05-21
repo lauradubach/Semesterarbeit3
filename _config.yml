@@ -14,8 +14,8 @@ github_username:  "lauradubach"
 
 # technical site
 url: "https://github.com/lauradubach/Semesterarbeit3/tree/main"
-logo: "Semesterarbeit3/Pictures/Autorin.jpg" 
-favicon_ico: "Semesterarbeit3/Pictures/Autorin.jpg"
+logo: "/Semesterarbeit3/Pictures/Autorin.jpg" 
+favicon_ico: "/Semesterarbeit3/Pictures/Autorin.jpg"
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
