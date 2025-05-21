@@ -14,7 +14,7 @@ github_username:  "lauradubach"
 
 # technical site
 url: "https://github.com/lauradubach/Semesterarbeit3/tree/main" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "Semesterarbeit3/Pictures/Autorin.jpg" # Add your logo here, if you have one. This will be shown in the top left corner of the page.
+logo: "C:/Users/laura/GithubS3/Semesterarbeit3/Pictures/Autorin.jpg" # Add your logo here, if you have one. This will be shown in the top left corner of the page.
 favicon_ico: "" # Add your favicon here, if you have one. This will be shown in the browser tab.
 remote_theme: just-the-docs/just-the-docs
 plugins:
