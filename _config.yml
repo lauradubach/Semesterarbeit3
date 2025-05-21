@@ -2,10 +2,10 @@
 color_scheme: dark
 
 # site overview
-title: Semesterarbeit 3 | HF Cloud Native Engineer # After "Semesterarbeit" add the number of the semester, then the Subject and the name of the project
-email: laura.dubach@edu.tbz.ch # Add your email address here, if you want to be contacted by email
+title: Semesterarbeit 3 | HF Cloud Native Engineer
+email: laura.dubach@edu.tbz.ch 
 
-description: >- # this means to ignore newlines until another declaration. Add a short description of your project here. This will be shown in the meta tags of the HTML files.
+description: >-
   "Music Event Finder Microservice" 
 
 # personal stuff
@@ -13,9 +13,9 @@ author: "Laura Dubach"
 github_username:  "lauradubach"
 
 # technical site
-url: "https://github.com/lauradubach/Semesterarbeit3/tree/main" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "C:/Users/laura/GithubS3/Semesterarbeit3/Pictures/Autorin.jpg" # Add your logo here, if you have one. This will be shown in the top left corner of the page.
-favicon_ico: "" # Add your favicon here, if you have one. This will be shown in the browser tab.
+url: "https://github.com/lauradubach/Semesterarbeit3/tree/main"
+logo: "C:/Users/laura/GithubS3/Semesterarbeit3/Pictures/Autorin.jpg" 
+favicon_ico: "C:/Users/laura/GithubS3/Semesterarbeit3/Pictures/Autorin.jpg"
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
@@ -23,9 +23,8 @@ plugins:
 back_to_top: false
 back_to_top_text: "Back to top"
 
-exclude:
 # Enter path with to exclude a file
-  # For example, if you want to exclude the file "Logininfos.json" in the folder "ressources/scripts/"
+exclude:
   - ressources/notizen/
   - documentation/Hauptteil/Notizen_aufbau.md
   - ressources/scripts/Logininfos.json
