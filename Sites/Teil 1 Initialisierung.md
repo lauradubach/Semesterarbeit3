@@ -2,7 +2,6 @@
 layout: default
 title: Teil 1 Initialisierung
 nav_order: 2
-permalink: /
 ---
 
 # Teil 1 Initialisierung

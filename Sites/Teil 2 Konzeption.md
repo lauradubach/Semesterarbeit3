@@ -2,7 +2,6 @@
 layout: default
 title: Teil 2 Konzeption
 nav_order: 3
-permalink: /
 ---
 
 # Teil 2 Konzeption
