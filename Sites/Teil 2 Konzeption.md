@@ -42,6 +42,7 @@ Nun gehen wir ins Thema Konzeption über. In diesem Kapitel wird das ganze Proje
   - [Ist und Soll](#ist-und-soll)
     - [Ist Zustand](#ist-zustand)
     - [Soll Zustand](#soll-zustand)
+  - [Grobplanung Microservice Design](#grobplanung-microservice-design)
   - [Risikomatrix](#risikomatrix)
     - [Technische Risiken](#technische-risiken)
     - [Organisatorische Risiken](#organisatorische-risiken)
@@ -227,6 +228,15 @@ Aktuell existiert kein spezialisierter Service zur personalisierten, ortsbezogen
 ### Soll Zustand
 
 Ziel ist die Entwicklung eines eigenständigen Microservices, der Musikveranstaltungen über eine REST-API verfügbar macht. Der Service soll externe Event-APIs anbinden, Daten filtern und personalisieren können sowie Nutzerdaten in einer angebundenen Datenbank verwalten. Die Bereitstellung erfolgt containerisiert via Docker und automatisiert über eine Deployment-Pipeline auf AWS. Der Service soll modular, wartbar und sicher konzipiert sein.
+
+## Grobplanung Microservice Design
+
+Spezifizierung Microservice:
+
+- Event-Service: Holt Musikveranstaltungen über eine externe Event-API.
+- User-Service: Verwaltet Nutzerinformationen und -präferenzen.
+- Recommendation-Service: Wendet Filterlogik an und erzeugt personalisierte Empfehlungen.
+- API-Gateway (optional): Dient als zentraler Zugangspunkt für Clients.
 
 ## Risikomatrix
 
