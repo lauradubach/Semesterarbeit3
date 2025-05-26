@@ -13,12 +13,12 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
   - [Werkzeuge](#werkzeuge)
   - [SCRUM-Überblick](#scrum-überblick)
   - [Defenition of Done](#defenition-of-done)
-  - [Funktionale Umsetzung](#funktionale-umsetzung)
-  - [Technische Qualität](#technische-qualität)
-  - [Sicherheit \& Stabilität](#sicherheit--stabilität)
-  - [Deployment](#deployment)
-  - [Dokumentation](#dokumentation)
-  - [Review \& Akzeptanz](#review--akzeptanz)
+    - [Funktionale Umsetzung](#funktionale-umsetzung)
+    - [Technische Qualität](#technische-qualität)
+    - [Sicherheit \& Stabilität](#sicherheit--stabilität)
+    - [Deployment](#deployment)
+    - [Dokumentation](#dokumentation)
+    - [Review \& Akzeptanz](#review--akzeptanz)
 - [Projektorganisation](#projektorganisation)
   - [Beteiligte Personen](#beteiligte-personen)
     - [Kanditatin](#kanditatin)
@@ -33,13 +33,14 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
 | 1.1 | 06.05.2025 | Laura Dubach | Jira Zeitplan starten & Sprint Planning beginnen |
 | 1.1 | 07.05.2025 | Laura Dubach | Jira Zeitplan & Sprint Planning fertigstellen, DoD erstellen |
 | 1.2 | 08.05.2025 | Laura Dubach | Site Initialierung schreiben |
-| 1.3 | 09.05.2025 | Laura Dubach | Sprint Review schreiben |
+| 1.3 | 09.05.2025 | Laura Dubach | Sprint Review schreiben und abschliessen |
 | 1.4 | 13.05.2025 | Laura Dubach | Seusag starten & API Auswahl dokumentieren |
 | 1.5 | 14.05.2025 | Laura Dubach | Seusag fertgstellen |
 | 1.6 | 15.05.2025 | Laura Dubach | Abschnitt Entscheiden dokumentieren |
 | 1.7 | 19.05.2025 | Laura Dubach | Ist & Soll, Implementierungsplan und Risikomatrix erstellen |
 | 1.8 | 20.05.2025 | Laura Dubach | Ist & Soll, Implementierungsplan und Risikomatrix erstellen dokumentieren |
-| 1.9 | 23.05.2025 | Laura Dubach | Site Konzepzion fertigstellen |
+| 1.9 | 23.05.2025 | Laura Dubach | Site Konzeption fertigstellen |
+| 2.0 | 26.05.2025 | Laura Dubach | Sprint Review 2 schreiben und abschliessen |
 
 
 # Aufgabenstellung
@@ -88,6 +89,7 @@ Die Herausforderung besteht darin, einen eigenständigen Microservice zu entwick
 - Flask
 - Github
 - AWS
+- Jira
 
 ## SCRUM-Überblick
 
@@ -97,32 +99,38 @@ Im Rahmen der Entwicklung des Microservices für personalisierte, ortsbezogene E
 
 Ein Product Backlog Item, gilt als "Done", wenn **alle** folgenden Kriterien erfüllt sind:
 
-## Funktionale Umsetzung
+### Funktionale Umsetzung
+
 - Die Funktionalität ist vollständig implementiert gemäß der User Story und den Akzeptanzkriterien.
 - Die API-Endpunkte liefern valide, erwartete Ergebnisse.
 - Filterlogiken und Datenbankzugriffe funktionieren korrekt.
 
-## Technische Qualität
+### Technische Qualität
+
 - Der Code wurde dokumentiert.
 - Es existieren Tests.
 - Es gibt keine kritischen oder offenen Bugs.
 
-## Sicherheit & Stabilität
-- Datenvalidierung (zu Beispiel bei Nutzereingaben) wurde umgesetzt.
+### Sicherheit & Stabilität
+
+- Datenvalidierung wurde umgesetzt.
 - Es wurden Sicherheitsaspekte berücksichtigt.
 - Die Anwendung läuft stabil in Docker-Containern.
 
-## Deployment
+### Deployment
+
 - Die Anwendung ist containerisiert (Docker) und funktionsfähig bereitgestellt.
 - Die Anwendung wird über die CI/CD-Pipeline automatisch auf AWS deployt.
 - Der Deployment-Status ist dokumentiert oder im Log nachvollziehbar.
 
-## Dokumentation
+### Dokumentation
+
 - Das Feature ist in der technischen Projektdokumentation beschrieben.
 - Änderungen sind nachvollziehbar.
 - Bei Bedarf wurden Screenshots, Diagramme oder Abläufe ergänzt.
 
-## Review & Akzeptanz
+### Review & Akzeptanz
+
 - Die Sprint Reviews sind alle Dokumentiert
 - Die Reflexion ist verständlich.
 - Die Funktionalität ist im Product Backlog als „Done“ markiert.
@@ -152,7 +160,7 @@ E-Mail: corrado.parisi@tbz.ch
 ```
 Langer Boris
 Funktion: Fachdozent
-Github: 
+Github: lab-bo
 E-Mail: boris.langer@tbz.ch
 ```
 

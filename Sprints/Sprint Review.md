@@ -54,9 +54,19 @@ Das Gespräch verlauf super. All meine Fragen konnten beantwortet werden und Cor
 
 #### Was lief gut
 
+Alle geplanten Aufgaben wurden abgeschlossen. Zusätzliche Aufgabe „Risikomatrix“ wurde während des Sprints aufgenommen und ebenfalls erfolgreich abgeschlossen.
+
+![Risikomatrix-Jira](../Pictures/Risikomatrix-Jira.png)
+
+Zeitmanagement war sehr gut, alle Deadlines wurden eingehalten.
+
 #### Was hätte besser laufen können
 
+Die Einplanung von Risiken und Pufferzeit: Die Risikomatrix wurde zwar erfolgreich integriert, zeigt aber, dass potenzielle Risiken früher identifiziert und geplant werden sollten.
+
 #### Was nehmen ich mir vor
+
+Frühzeitige Identifikation und Planung potenzieller Zusatzaufgaben, damit diese nicht spontan eingeschoben werden müssen.
 
 ### Besprechung
 
