@@ -351,7 +351,6 @@ Im Vergleich standen unter anderem die Ticketmaster API und die Eventbrite API. 
 | Datenqualität         | Hoch, insbesondere bei Großveranstaltungen                 | Schwankend je nach Region und Veranstalter                 |
 | Eventkategorien       | Breites Spektrum, gut strukturiert                         | Stärker auf Community-Events fokussiert                    |
 
-
 Auf Basis dieser Analyse fiel die Entscheidung zugunsten der Ticketmaster API, da sie besser zu den Projektanforderungen in Bezug auf Datenqualität, Eventkategorien und internationale Verfügbarkeit passt.
 
 > (Chat GPT) [Quelle](https://chatgpt.com/share/681cb603-08cc-800e-aab1-fdd14d015179)
