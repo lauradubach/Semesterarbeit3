@@ -70,6 +70,12 @@ erDiagram
 
 Image location: https://github.com/lauradubach?tab=packages
 
+Secrets:
+![secrets](../Pictures/secrets.png)
+
+Funktionierende Pipline:
+![Pipline](../Pictures/Pipline.png)
+
 ### Aufgetretene Probleme
 
 #### Pipline

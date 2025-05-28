@@ -41,6 +41,7 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
 | 1.8 | 20.05.2025 | Laura Dubach | Ist & Soll, Implementierungsplan und Risikomatrix erstellen dokumentieren |
 | 1.9 | 23.05.2025 | Laura Dubach | Site Konzeption fertigstellen |
 | 2.0 | 26.05.2025 | Laura Dubach | Sprint Review 2 schreiben und abschliessen |
+| 2.1 | 28.05.2025 | Laura Dubach | Start mit Datenbank diagramm und Pipline erste tests auf Github |
 
 
 # Aufgabenstellung
