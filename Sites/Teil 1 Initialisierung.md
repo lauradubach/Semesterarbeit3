@@ -33,15 +33,16 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
 | 1.1 | 06.05.2025 | Laura Dubach | Jira Zeitplan starten & Sprint Planning beginnen |
 | 1.1 | 07.05.2025 | Laura Dubach | Jira Zeitplan & Sprint Planning fertigstellen, DoD erstellen |
 | 1.2 | 08.05.2025 | Laura Dubach | Site Initialierung schreiben |
-| 1.3 | 09.05.2025 | Laura Dubach | Sprint Review schreiben und abschliessen |
+| 1.3 | 09.05.2025 | Laura Dubach | Sprint Abschluss schreiben und abschliessen |
 | 1.4 | 13.05.2025 | Laura Dubach | Seusag starten & API Auswahl dokumentieren |
 | 1.5 | 14.05.2025 | Laura Dubach | Seusag fertgstellen |
 | 1.6 | 15.05.2025 | Laura Dubach | Abschnitt Entscheiden dokumentieren |
 | 1.7 | 19.05.2025 | Laura Dubach | Ist & Soll, Implementierungsplan und Risikomatrix erstellen |
 | 1.8 | 20.05.2025 | Laura Dubach | Ist & Soll, Implementierungsplan und Risikomatrix erstellen dokumentieren |
 | 1.9 | 23.05.2025 | Laura Dubach | Site Konzeption fertigstellen |
-| 2.0 | 26.05.2025 | Laura Dubach | Sprint Review 2 schreiben und abschliessen |
+| 2.0 | 26.05.2025 | Laura Dubach | Sprint Abschluss 2 schreiben und abschliessen |
 | 2.1 | 28.05.2025 | Laura Dubach | Start mit Datenbank diagramm und Pipline erste tests auf Github |
+| 2.2 | 02.06.2025 | Laura Dubach| Sprint Abschluss 2 beendet |
 
 
 # Aufgabenstellung
