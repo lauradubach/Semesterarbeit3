@@ -141,13 +141,11 @@ Frühzeitige Identifikation und Planung potenzieller Zusatzaufgaben, damit diese
 
 ### Abgeschlossene Story`s
 
+Alle vorgesehenen Story`s konnten fristgerecht abgeschlossen werden.
+
+![Story3](../Pictures/Story3.png)
+
 Folgendes wurde genau umgesetzt:
-
-### Besprechung
-
-| Besprechung | Datum | Uhrzeit | Teilnehmer | 
-| ---- | ---- | ---- | ---- |
-| 3 | 20.06.2025 | 18:00 | Corrado Parisi, Laura Dubach |
 
 ## Sprint-Retrospektive 3
 

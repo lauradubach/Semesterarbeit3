@@ -27,7 +27,6 @@
 
 ```mermaid
 erDiagram
-    users ||--o{ preferences : has
     users ||--o{ favorites : has
     events ||--o{ favorites : is_favorited_by
 
@@ -38,16 +37,6 @@ erDiagram
         string password_hash
         datetime created_at
     }
-
-    preferences {
-        int id PK
-        int user_id FK
-        string genre
-        string artist
-        string location
-        datetime created_at
-    }
-
     events {
         string id PK
         string title
@@ -68,6 +57,8 @@ erDiagram
 
 ## Entwicklung
 
+Meine lokale URL: http://localhost:5000/ui/search
+
 Image location: https://github.com/lauradubach?tab=packages
 
 Secrets:
@@ -86,6 +77,32 @@ nun kam folgender error:
 ![error1](../Pictures/Error1.png)
 
 hier musste im  deploy job folgender Punkt ergänzt werden: `- uses: actions/checkout@v3`
+
+Favorites hinzufügen:
+
+Im ui/routes.py (im login und register) musste session['user_id'] = data['user_id']
+Im users/routes.py musste return {
+        'token': token,
+        'duration': 600,
+        'user_id': user.id
+    }
+Im models/user.py musste user_id = Integer() Im TokenOut
+
+hinzugefügt werden, da die User ID im json nicht übergeben wurde
+
+damit wenn man den button anklickt die bestehnde suche bleibt habe ich im html dies hinzugefügt: <input type="hidden" name="next" value="{{ request.url }}">
+
+auch im favorites/routes musste dies entsprechend ergänzt werden.
+
+ich musste javascript und css integrieren, da sonst wenn man beim Klick auf einen Stern direkt was ändern möchte (Farbe, Favorit speichern), ohne die Seite zu laden, braucht man ein bisschen JavaScript, um: den Klick abzufangen, den Server anzufragen (mit fetch) und den Stern einfärben (CSS-Klasse setzen)
+
+
+Tests:
+![success_test](../Pictures/success_test.png)
+
+Elastic Adresse: 54.156.170.152
+
+Pfad um auf EC2 Maschine zu connecten: ssh -i "eventfinder-key.pem" ec2-user@ec2-54-156-170-152.compute-1.amazonaws.com
 
 ## Fallbacksolution
 

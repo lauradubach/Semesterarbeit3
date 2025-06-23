@@ -281,6 +281,8 @@ Hier wird grob dargestellt, wie in diesem Projekt vorgegangen wird.
 
 Der Implementierungsplan für den Event-Microservice zeigt die sieben Hauptschritte, die für die erfolgreiche Umsetzung notwendig sind. Jeder dieser Schritte ist essenziell für das Gesamtprodukt kein Schritt kann ausgelassen werden, da sie aufeinander aufbauen und zusammen die Funktionsfähigkeit, Sicherheit und Wartbarkeit des Systems gewährleisten.
 
+PS: QS bedeutet Qualitäts Sicherung
+
 # Entscheiden
 
 ## Technologieentscheidungen
