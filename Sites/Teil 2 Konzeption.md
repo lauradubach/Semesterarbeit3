@@ -121,7 +121,6 @@ Funktionale Anforderungen:
 - Anbindung an eine externe Event-API (z. B. Ticketmaster, Eventbrite)
 - Filteroptionen nach Ort, Datum, Genre, etc.
 - Speicherung und Verwaltung von Nutzerinformationen
-- Personalisierte Empfehlungen auf Basis von Nutzerpräferenzen
 
 Nicht-funktionale Anforderungen:
 
@@ -235,7 +234,7 @@ Spezifizierung Microservice:
 
 - Event-Service: Holt Musikveranstaltungen über eine externe Event-API.
 - User-Service: Verwaltet Nutzerinformationen und -präferenzen.
-- Recommendation-Service: Wendet Filterlogik an und erzeugt personalisierte Empfehlungen.
+- Recommendation-Service: Wendet Filterlogik
 - API-Gateway (optional): Dient als zentraler Zugangspunkt für Clients.
 
 ## Risikomatrix

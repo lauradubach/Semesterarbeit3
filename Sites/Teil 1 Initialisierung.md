@@ -43,6 +43,11 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
 | 2.0 | 26.05.2025 | Laura Dubach | Sprint Abschluss 2 schreiben und abschliessen |
 | 2.1 | 28.05.2025 | Laura Dubach | Start mit Datenbank diagramm und Pipline erste tests auf Github |
 | 2.2 | 02.06.2025 | Laura Dubach | Sprint Abschluss 2 beendet |
+| 2.3 | 03.06.2025 | Laura Dubach | Start Sprint 3, dokumentation Vorbereiten |
+| 2.4 | 04.06.2025 | Laura Dubach | Umsetzung starten |
+| 2.5 | 20.06.2025 | Laura Dubach | Umsetzung fertigstellen |
+| 2.6 | 23.06.2025 | Laura Dubach | Sprint Abschluss 3 |
+| 2.7 | 25.06.2025 | Laura Dubach | Sprint Start 4, Umsetzung fertig dokumentieren, testing starten |
 
 
 # Aufgabenstellung

@@ -9,6 +9,11 @@
 # Auswerten
 ## Zusammenfassung
 ## Reflexion
+
+## Herausforderungen und Lösungen
+
+Während der Entwicklung traten mehrere technische Probleme auf – insbesondere beim Zusammenspiel von externer API, Datenbank und Authentifizierung. Durch systematisches Debugging, gezieltes Logging und schrittweise Vereinfachung des Codes konnten die Probleme schrittweise identifiziert und gelöst werden.
+
 ## Quellen
 
 Kapitel Informieren, Site Konzeption
