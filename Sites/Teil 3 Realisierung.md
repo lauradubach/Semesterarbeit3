@@ -21,6 +21,8 @@ Kommen wir zur Umsetzung des Projektes. In diesem Teil wird genau beschrieben, w
   - [Testing](#testing)
     - [Testkonzept](#testkonzept)
     - [Testdurchführung](#testdurchführung)
+      - [Lokale Umgebung:](#lokale-umgebung)
+      - [Produktive Umgebung:](#produktive-umgebung)
 
 # Realisieren
 
@@ -212,22 +214,29 @@ Die Kontrolle ist sehr wichtig. So kann versichert werden, dass das Enprodukt fu
 
 | Testperson | Datum |
 | ---------- | ----- |
+| Laura Dubach | 26.06.2025 |
 
 | System | Testmittel | Testmethode |
 | -------| ---------- | ----------- |
+| Microservice | Github, Python Skripts, EC2 AWS Instanz, Docker Desktop | Funktionaler Test |
+
+In diesen Tests wird die Funktionalität des entwickelten Musik Event Finders getestet. Die produktive und die lokale Umgebung werden getestet. 
 
 ### Testdurchführung
 
 | Testfall | Erwartetes Ergebnis | Testresultat |
 | ---------| ------------------- | ------------ |
+| Tests der ganzen Umgebung | Alle Tests laufen erfolgreich durch. | Die Tests laufen alle durch, die Umgebung nun Produktiv geschalten werden: ![success_test](../Pictures/success_test.png) |
+| Lokaler Test der Website | Website startet und alle Funktionen funktionieren | Die Website kann erfolgreich aufgerufen werden, Registrierung User klappt, Login User klappt, Event Suche klappt, Eventfavoritisieren klappt. |
+| Pipline Testen | Pipline läuft erfolgreich durch | Alles läuft durch und die Pipline pushed erfolgreich auf die EC2 Instanz: ![Pipline](../Pictures/Pipline.png) |
+| SSH auf EC2 Instanz | SSH connection auf EC2 Instanz testen | Im Ordner .ssh mit dem Befehl 'ssh -i "eventfinder-key.pem" ec2-user@ec2-54-156-170-152.compute-1.amazonaws.com' gelingt der Zugriff: ![SSH](../Pictures/ssh_test.png) | 
+| Produktive Website Testen | Website startet und alle Funktionen funktionieren | Die Website kann über die erstellte Elastic IP aufgerufen werden  (http://54.156.170.152/) und alle Funktionen funktionieren. |
 
 
-Funktionierende Pipline:
+#### Lokale Umgebung:
 
-![Pipline](../Pictures/Pipline.png)
+#### Produktive Umgebung:
 
-Tests:
-![success_test](../Pictures/success_test.png)
 
 
 > Back [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%202%20Konzeption.md)
