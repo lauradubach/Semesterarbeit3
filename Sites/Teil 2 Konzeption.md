@@ -357,6 +357,6 @@ Auf Basis dieser Analyse fiel die Entscheidung zugunsten der Ticketmaster API, d
 > (Chat GPT) [Quelle](https://chatgpt.com/share/681cb603-08cc-800e-aab1-fdd14d015179)
 
 
-> Back [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%201%20Initialisierung.md)
+> Back [Page](https://lauradubach.github.io/Semesterarbeit3/Sites/Teil%201%20Initialisierung.html)
 >
-> Next [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%203%20Realisierung.md)
+> Next [Page](https://lauradubach.github.io/Semesterarbeit3/Sites/Teil%203%20Realisierung.html)

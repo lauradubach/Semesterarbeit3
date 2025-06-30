@@ -239,6 +239,6 @@ In diesen Tests wird die Funktionalität des entwickelten Musik Event Finders ge
 
 
 
-> Back [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%202%20Konzeption.md)
+> Back [Page](https://lauradubach.github.io/Semesterarbeit3/Sites/Teil%202%20Konzeption.html)
 >
-> Next [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%204%20Abschluss.md)
+> Next [Page](https://lauradubach.github.io/Semesterarbeit3/Sites/Teil%204%20Abschluss.html)

@@ -102,6 +102,6 @@ Kapitel Entscheiden, Site Konzeption
 Chat GPT. (2025): kannst du mir hierzu einen text schreiben: Event API Recherche & Anbindung Vorbereiten. Aufgerufen am: 08.05.2025. Online unter: https://chatgpt.com/share/681cb603-08cc-800e-aab1-fdd14d015179
 
 
-> Back [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%203%20Realisierung.md)
+> Back [Page](https://lauradubach.github.io/Semesterarbeit3/Sites/Teil%203%20Realisierung.html)
 >
-> Back [Start](https://github.com/lauradubach/Semesterarbeit3/blob/main/README.md)
+> Back [Start](https://lauradubach.github.io/Semesterarbeit3/)

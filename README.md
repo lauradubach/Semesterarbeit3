@@ -17,7 +17,8 @@ Im Rahmen dieser Semesterarbeit wird ein Microservice entwickelt, der Nutzern da
 
 ## Sprints
 
-- > [Sprints](Sprints)
+- > [Sprint Planning](https://lauradubach.github.io/Semesterarbeit3/Sprints/Sprint%20Planning.html)
+- > [Sprint Abschlüsse](https://lauradubach.github.io/Semesterarbeit3/Sprints/Sprint%20Abschl%C3%BCsse.html)
 
 ## Autorin
 

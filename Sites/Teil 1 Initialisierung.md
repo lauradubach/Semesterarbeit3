@@ -177,6 +177,6 @@ E-Mail: boris.langer@tbz.ch
 Damit keine Daten verloren gehen, werde ich alle Dokumente auf meinem OneDrive abspeichern. Zusätzlich werde ich die Daten auf einen USB-Stick abspeichern, damit ich im Worstcase Szenario ein Backup besitze.
 
 
-> Back [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/README.md)
+> Back [Page](https://lauradubach.github.io/Semesterarbeit3/)
 >
-> Next [Page](https://github.com/lauradubach/Semesterarbeit3/blob/main/Sites/Teil%202%20Konzeption.md)
+> Next [Page](https://lauradubach.github.io/Semesterarbeit3/Sites/Teil%202%20Konzeption.html)

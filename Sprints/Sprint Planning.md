@@ -1,3 +1,18 @@
+- [Sprint Planning](#sprint-planning)
+  - [Sprint 1, 05.05 – 09.05 (5 Tage)](#sprint-1-0505--0905-5-tage)
+    - [Aufgaben](#aufgaben)
+    - [Aufgabenverteilung](#aufgabenverteilung)
+    - [Nächste Schritte](#nächste-schritte)
+  - [Sprint 2 10.05 – 26.05 (16 Tage)](#sprint-2-1005--2605-16-tage)
+    - [Aufgabenverteilung](#aufgabenverteilung-1)
+    - [Nächste Schritte](#nächste-schritte-1)
+  - [Sprint 3: 27.05 – 23.06 (28 Tage)](#sprint-3-2705--2306-28-tage)
+    - [Aufgabenverteilung](#aufgabenverteilung-2)
+    - [Nächste Schritte](#nächste-schritte-2)
+  - [Sprint 4: 24.06 – 09.07 (16 Tage)](#sprint-4-2406--0907-16-tage)
+    - [Aufgabenverteilung](#aufgabenverteilung-3)
+    - [Nächste Schritte](#nächste-schritte-3)
+
 # Sprint Planning
 
 Entwicklung eines Microservices für Event-Empfehlungen
