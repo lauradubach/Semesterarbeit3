@@ -56,16 +56,10 @@ Alle Aufgaben werden von Laura Dubach umgesetzt.
 
 ![Sprint4](../Pictures/Sprint4.png)
 
-### Priorisierung
-
-1. Priorität
-2. Priorität
-3. Priorität
-
 ### Aufgabenverteilung
 
 Alle Aufgaben werden von Laura Dubach umgesetzt.
 
 ### Nächste Schritte
 
-- Sprintreview findet am: 20.06 statt
+- Sprintreview findet am: 07.07 statt

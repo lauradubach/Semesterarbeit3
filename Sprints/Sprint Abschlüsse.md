@@ -46,25 +46,8 @@ Das Gespräch verlauf super. All meine Fragen konnten beantwortet werden und Cor
 
 ## Sprint-Retrospektive 1
 
-### Was lief gut
+![Retrospektive1](../Pictures/Retrospektive1.png)
 
-Starker Projektstart: Das Projekt wurde erfolgreich gestartet, inklusive klarer Zieldefinitionen.
-
-Tooling & Struktur: Die Projektstruktur wurde konsistent aufgebaut, das Git-Repository eingerichtet und alle nötigen Tools vorbereitet – dadurch ist eine solide Arbeitsbasis geschaffen worden.
-
-Anforderungsanalyse: Die Anforderungen wurden detailliert analysiert und dokumentiert.
-
-Zeitplanung: Ein realistischer Zeitplan mit klaren Meilensteinen und Abhängigkeiten wurde erstellt. Die Abstimmung mit den Sprintphasen sorgt für Transparenz und Planungssicherheit.
-
-### Was hätte besser laufen können
-
-Technische Recherchen zur Event-API: Dieser Aspekt des Sprint-Ziels wurde noch nicht bzw. nur am Rande adressiert. Hier besteht Nachholbedarf in Sprint 2.
-
-### Was nehmen ich mir vor
-
-Technische Recherchen priorisieren: Die Recherche zur Event-API soll in Sprint 2 gezielt dokumentiert werden.
-
-Tooling: Im nächsten Sprint werden die Tools verglichen und Entscheidungen getroffen.
 
 ## Sprint Review 2
 
@@ -125,17 +108,7 @@ Das Gespräch verlauf super. All meine Fragen konnten beantwortet werden und Cor
 
 ## Sprint-Retrospektive 2
 
-#### Was lief gut
-
-Alle geplanten Aufgaben wurden abgeschlossen. Zusätzliche Aufgabe „Risikomatrix“ wurde während des Sprints aufgenommen und ebenfalls erfolgreich abgeschlossen. Zeitmanagement war sehr gut, alle Deadlines wurden eingehalten.
-
-#### Was hätte besser laufen können
-
-Die Einplanung von Risiken und Pufferzeit: Die Risikomatrix wurde zwar erfolgreich integriert, zeigt aber, dass potenzielle Risiken früher identifiziert und geplant werden sollten.
-
-#### Was nehmen ich mir vor
-
-Frühzeitige Identifikation und Planung potenzieller Zusatzaufgaben, damit diese nicht spontan eingeschoben werden müssen.
+![Retrospektive2](../Pictures/Retrospektive2.png)
 
 ## Sprint Review 3
 
@@ -147,13 +120,21 @@ Alle vorgesehenen Story`s konnten fristgerecht abgeschlossen werden.
 
 Folgendes wurde genau umgesetzt:
 
+- API-Endpunkte funktionieren wie spezifiziert.
+- Events werden korrekt ausgelöst und verarbeitet.
+- Filterlogik liefert konsistente Ergebnisse.
+- Datenbankverbindung besteht stabil.
+- CRUD-Funktionalität ist gegeben.
+- Dockerfile vorhanden und funktionsfähig.
+- Anwendung läuft lokal und/oder auf Testumgebung.
+- Readme beschreibt Startvorgang.
+- CI/CD-Pipeline ist eingerichtet.
+- Deployment auf AWS erfolgt automatisch bei Push auf Main.
+- Zugang zur Anwendung ist dokumentiert.
+
 ## Sprint-Retrospektive 3
 
-#### Was lief gut
-
-#### Was hätte besser laufen können
-
-#### Was nehmen ich mir vor
+![Retrospektive3](../Pictures/Retrospektive3.png)
 
 ## Sprint Review 4
 
