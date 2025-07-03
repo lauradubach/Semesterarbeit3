@@ -50,6 +50,7 @@ Nun gehen wir ins Thema Konzeption über. In diesem Kapitel wird das ganze Proje
     - [Abhängigkeiten und externe Faktoren](#abhängigkeiten-und-externe-faktoren)
   - [Implementierungsplan](#implementierungsplan)
 - [Entscheiden](#entscheiden)
+  - [SWOT-Analyse](#swot-analyse)
   - [Technologieentscheidungen](#technologieentscheidungen)
     - [Warum Docker?](#warum-docker)
     - [Warum AWS?](#warum-aws)
@@ -285,6 +286,16 @@ Der Implementierungsplan für den Event-Microservice zeigt die sieben Hauptschri
 PS: QS bedeutet Qualitäts Sicherung
 
 # Entscheiden
+
+Im Kapitel Entscheiden werden die Produkte die zur Auswahl stehen verglichen. Es gibt eine SWOT Analyse und eine Entscheidunsmatrix. Zusätzlich wird beschrieben, wieso ich mit den Ausgewählten Programmen und Tools arbeite.
+
+## SWOT-Analyse
+
+Die folgende SWOT-Analyse fasst die wesentlichen Einflussfaktoren zusammen:
+
+![SWOT Analyse](../Pictures/SWOT_Analyse.png)
+
+Die SWOT-Analyse gibt einen kompakten Überblick über die wichtigsten internen und externen Einflussfaktoren des Projekts. Sie zeigt, dass der entwickelte Microservice eine moderne, skalierbare und technologisch aktuelle Lösung darstellt, deren Potenziale jedoch nur durch gezielte Berücksichtigung von Datenschutz, Infrastrukturkosten und API-Abhängigkeiten voll ausgeschöpft werden können. Insgesamt bildet die Analyse eine wertvolle Grundlage für zukünftige Entscheidungen zur Weiterentwicklung des Systems.
 
 ## Technologieentscheidungen
 
