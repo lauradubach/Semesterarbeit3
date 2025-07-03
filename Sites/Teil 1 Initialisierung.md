@@ -29,7 +29,7 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
 
 | Version | Datum  | Autor | Bemerkung | 
 | ------- | ------ | ----  | --------- |
-| 1.0 | 05.05.2025 | Laura Dubach | Repo, Struktur, Notion erstellen |
+| 1.0 | 05.05.2025 | Laura Dubach | Repo, Struktur erstellen |
 | 1.1 | 06.05.2025 | Laura Dubach | Jira Zeitplan starten & Sprint Planning beginnen |
 | 1.1 | 07.05.2025 | Laura Dubach | Jira Zeitplan & Sprint Planning fertigstellen, DoD erstellen |
 | 1.2 | 08.05.2025 | Laura Dubach | Site Initialierung schreiben |
@@ -49,6 +49,7 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
 | 2.6 | 23.06.2025 | Laura Dubach | Sprint Abschluss 3 |
 | 2.7 | 25.06.2025 | Laura Dubach | Sprint Start 4, Umsetzung fertig dokumentieren, testing starten |
 | 2.8 | 26.06.2025 | Laura Dubach | Tests dokumentieren |
+| 2.9 | 02.07.2025 | Laura Dubach | Abschluss der Arbeit dokumentieren |
 
 
 # Aufgabenstellung
@@ -84,6 +85,7 @@ Die Herausforderung besteht darin, einen eigenständigen Microservice zu entwick
 ### Programmiersprache
 
 - Python
+- HTML
 
 ## Werkzeuge
 
@@ -174,7 +176,7 @@ E-Mail: boris.langer@tbz.ch
 
 # Datensicherung
 
-Damit keine Daten verloren gehen, werde ich alle Dokumente auf meinem OneDrive abspeichern. Zusätzlich werde ich die Daten auf einen USB-Stick abspeichern, damit ich im Worstcase Szenario ein Backup besitze.
+Damit keine Daten verloren gehen, werde ich alle Dokumente auf meinem OneDrive abspeichern. Durch das Pushen ins Github, wird dies ja auch in der Cloud gesichert. Zusätzlich werde ich die Daten auf einen USB-Stick abspeichern, damit ich im Worstcase Szenario ein Backup besitze.
 
 
 > Back [Page](https://lauradubach.github.io/Semesterarbeit3/)

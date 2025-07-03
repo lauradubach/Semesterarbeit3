@@ -40,14 +40,13 @@ Die Zeitplanung war grundsätzlich gut, aber durch die ungeplanten Schwierigkeit
 
 #### Herausforderungen und Lösungen
 
-Während der Entwicklung traten mehrere technische Probleme auf – insbesondere beim Zusammenspiel von externer API, Datenbank und Authentifizierung. Durch systematisches Debugging, gezieltes Logging und schrittweise Vereinfachung des Codes konnten die Probleme identifiziert und gelöst werden.
+Während der Entwicklung traten mehrere technische Probleme auf, insbesondere beim Zusammenspiel von externer API, Datenbank und Authentifizierung. Durch systematisches Debugging, gezieltes Logging und schrittweise Vereinfachung des Codes konnten die Probleme identifiziert und gelöst werden.
  
 ### Reflexion der technischen Umsetzung
 
 #### Analysen und Planung
 
-Zu Beginn des Projekts analysierte ich, wie ein Event-Microservice sinnvoll aufgebaut werden kann, um Benutzerinteraktionen mit einer externen Event-API zu ermöglichen. Ich habe Anforderungen definiert, die Datenquellen geprüft und frühzeitig entschieden, welche Funktionen (z. B. Filterung, Nutzerfavoriten) umgesetzt werden sollen.
-Die Planung erfolgte orientiert SCRUM, die ich in Jira dokumentiert habe.
+Zu Beginn des Projekts analysierte ich, wie ein Event-Microservice sinnvoll aufgebaut werden kann, um Benutzerinteraktionen mit einer externen Event-API zu ermöglichen. Ich habe Anforderungen definiert, die Datenquellen geprüft und frühzeitig entschieden, welche Funktionen (z.b Filterung, Nutzerfavoriten) umgesetzt werden sollen. Die Planung erfolgte orientiert SCRUM, die ich in Jira dokumentiert habe.
 
 #### Entscheidung
 
@@ -76,7 +75,7 @@ Ich habe viel über API-Integration, Docker-Containerisierung, Flask-Anwendungen
 
 #### Erweiterte Funktionalität
 
-In Zukunft könnten weitere Filteroptionen, z.b nach Preis oder Verfügbarkeit, ergänzt werden. Auch ein Login-System mit persönlicher Favoritenliste wurde angedacht und könnte weiter ausgebaut werden. Es könnte auch eine Google Maps integration eingebaut werden, die direkt die Eventlocation anzeigt.
+In Zukunft könnten weitere Filteroptionen, z.b nach Preis oder Verfügbarkeit, ergänzt werden. Eine Spotify Einbindung wäre auch eine Möglichkeit um direkt in die Musik des Künstlers reinzuhören. Es könnte auch eine Google Maps integration eingebaut werden, die direkt die Eventlocation anzeigt.
 
 #### Skalierbarkeit und Performance
 

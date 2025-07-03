@@ -16,13 +16,14 @@ Kommen wir zur Umsetzung des Projektes. In diesem Teil wird genau beschrieben, w
     - [Bereitstellung über CI/CD-Pipeline (AWS EC2)](#bereitstellung-über-cicd-pipeline-aws-ec2)
     - [Codebeispiele](#codebeispiele)
     - [Aufgetretene Probleme](#aufgetretene-probleme)
+      - [Favorites hinzufügen:](#favorites-hinzufügen)
+      - [Migration in die Produktivumgebung:](#migration-in-die-produktivumgebung)
   - [Fallbacksolution](#fallbacksolution)
 - [Kontrollieren](#kontrollieren)
   - [Testing](#testing)
     - [Testkonzept](#testkonzept)
     - [Testdurchführung](#testdurchführung)
-      - [Lokale Umgebung:](#lokale-umgebung)
-      - [Produktive Umgebung:](#produktive-umgebung)
+      - [Umgebung:](#umgebung)
 
 # Realisieren
 
@@ -30,35 +31,32 @@ Nun wird die Realisierung beschrieben. Die Umsetzung der Arbeit wird gezeigt ink
 
 ## Datenbank
 
-Das Datenbankmodell besteht aus zwei Tabellen: users und favorites. Jeder Benutzer kann beliebig viele Events über ihre event_id als Favoriten speichern, wobei die Event-Daten über die externe Ticketmaster-API verwaltet und abgerufen werden.
+Das Datenbankmodell besteht aus zwei Tabellen: users und favorites. Jeder Benutzer kann beliebig viele Events über die event_id als Favoriten speichern, wobei die Event-Daten über die externe Ticketmaster-API verwaltet und abgerufen werden.
 
-```mermaid
-erDiagram
-    users ||--o{ favorites : has
-
-    users {
-        int id PK
-        string name
-        string email
-        string password_hash
-    }
-
-    favorites {
-        int id PK
-        int user_id FK
-        string event_id
-    }
-```
+![Datenbank](../Pictures/Datenbank.png)
 
 ## Externe Ticketmaster API
 
 Die Ticketmaster API habe ich auf folgender Site bezogen: (https://developer-acct.ticketmaster.com/)
 
+Bevor ich Sie in mein Service eingebunden habe, habe ich sie getestet. Das Test Skript liegt hier: [Skripts](../Scripts)
+
 ## Github Secrets
 
 In diesem Projekt werden GitHub Secrets verwendet, um sensible Informationen sicher innerhalb der CI/CD-Pipeline bereitzustellen. Sie ermöglichen es, automatisierte Prozesse wie das Bauen und Deployen der Anwendung durchzuführen, ohne Zugangsdaten im Quellcode zu speichern.
 
-Hier sind all meine Secrets:
+Folgende Secrets werden in der Pipline benötigt:
+
+- DEPLOY_TARGET - die IP-Adresse oder der DNS-Name des Ziel-Servers
+- DEPLOY_TARGET_USER - der user, mit dem wir uns auf dem target server einloggen
+- SSH_PRIVATE_KEY - der private SSH-Key des Servers (auf AWS EC2 normalerweise während der Erstellung generiert)
+- DB_ROOT_PASSWORD - das Root Passwort der MySQL-Datenbank
+- TICKETMASTER_API_KEY - Der API Key, welcher von der Externen Ticketmaster API zur Verfügung gestellt wird
+- REGISTRY_USER - der Benutzername für die Container Registry (z. B. GitHub oder Docker Hub)
+- REGISTRY_PASSWORD - das Passwort oder der Personal Access Token für die Container Registry
+- REGISTRY_IMAGE - der vollständige Name des Docker-Images inkl. Registry und Namespace
+
+Hier sind all meine Secrets im Github:
 
 ![Secrets](../Pictures/github_secrets.png)
 
@@ -121,31 +119,85 @@ Mein ganzer Code: [Produktionsumgebung](https://github.com/lauradubach/Produktio
 
 ### Aufgetretene Probleme
 
-Favorites hinzufügen:
+#### Favorites hinzufügen:
 
-Im ui/routes.py (im login und register) musste session['user_id'] = data['user_id']
-Im users/routes.py musste return {
+Als ich die Favoriten funktion hinzufügen wollte hatte ich einige Probleme und musste Troubleshooten. Hier sind einige Herausforderungen die ich hatte:
+
+Im ui/routes.py (im login und register) musste ich folgendes hinzufügen:
+
+`['user_id'] = data['user_id']`
+
+Im users/routes.py musste dies hinzugefügt werden:
+
+```
+return {
         'token': token,
         'duration': 600,
         'user_id': user.id
     }
-Im models/user.py musste user_id = Integer() Im TokenOut
+```
 
-hinzugefügt werden, da die User ID im json nicht übergeben wurde
+Im models/user.py musste `user_id = Integer()` im TokenOut hinzugefügt werden, da die User ID im Json File nicht übergeben wurde.
 
-damit wenn man den button anklickt die bestehnde suche bleibt habe ich im html dies hinzugefügt: <input type="hidden" name="next" value="{{ request.url }}">
+Damit die bestehende Suche bleibt und der Stern angeklickt bleibt, wenn man einen refresh der Seite macht, habe ich im html dies hinzugefügt:
 
-auch im favorites/routes musste dies entsprechend ergänzt werden.
+`<input type="hidden" name="next" value="{{ request.url }}">`
 
-ich musste javascript und css integrieren, da sonst wenn man beim Klick auf einen Stern direkt was ändern möchte (Farbe, Favorit speichern), ohne die Seite zu laden, braucht man ein bisschen JavaScript, um: den Klick abzufangen, den Server anzufragen (mit fetch) und den Stern einfärben (CSS-Klasse setzen)
+-> Auch im favorites/routes musste dies entsprechend ergänzt werden.
 
-Migration in die Produktivumgebung:
+Ich musste Javascript und CSS integrieren, da sonst beim Klick auf einen Stern die Füllung sich nicht verändert. Das Skript macht nichts anderes als: den Klick abzufangen, den Server anzufragen (mit fetch) und den Stern einfärben (CSS-Klasse setzen)
 
-Die Seite konnte ich aufrufen, sobald ich mich aber eingeloggt habe kam einfach nichts mehr.
+Dies ist das Skript:
 
-Das ganze Code snippet im ui/routes vom Login und Register musste abgeändert werden, hier als Beispiel der Login Code:
+```java
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? '1' : '0');
+    }
 
-Alt:
+    window.addEventListener('DOMContentLoaded', () => {
+        if (localStorage.getItem('darkMode') === '1') {
+            document.body.classList.add('dark-mode');
+        }
+    });
+
+    document.querySelectorAll('.star-button').forEach(button => {
+        button.addEventListener('click', async (e) => {
+            e.preventDefault();
+            const eventId = button.dataset.eventId;
+            const isFavorite = button.dataset.isFavorite === "1";
+
+            const response = await fetch("/favorites/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    event_id: eventId,
+                    is_favorite: isFavorite
+                })
+            });
+
+            if (response.ok) {
+                button.textContent = isFavorite ? "☆" : "★";
+                button.dataset.isFavorite = isFavorite ? "0" : "1";
+            } else {
+                alert("Fehler beim Speichern des Favoriten.");
+            }
+        });
+    });
+</script>
+```
+
+#### Migration in die Produktivumgebung:
+
+Die Seite über die erstellte Elastic IP konnte ich aufrufen, die Login Page erscheint, sobald ich mich jedoch eingeloggt habe kam einfach nichts mehr.
+
+Das ganze Code snippet im ui/routes vom Login und Register musste abgeändert werden, hier der Login Code:
+
+**Alt:**
+
 ```python
 @bp.route('/login', methods=['GET', 'POST'])
 def login():
@@ -173,7 +225,7 @@ def login():
  
     return render_template('users/login.html')
 ```
-Neu:
+**Neu:**
 
 ```python
 @bp.route('/login', methods=['GET'])
@@ -199,14 +251,14 @@ def login_post(form_data=None):
         return redirect(url_for('ui.login_get'))
 ```
 
-Die funktion Get und Post musste getrennt werden, auch hiermit konnte Flask nicht umgehen `response = requests.post`
-
+Die funktion Get und Post musste getrennt werden und `response = requests.post` musste umgeschrieben werden. Danach konnte ich die Pipline laufen lassen und alles hat erfolgreich funktioniert.
 
 ## Fallbacksolution
 
 Da das Projekt nicht für den Produktiven Gebrauch gedacht ist, da das ganze sich auf einem Learner LAB befindet, benötigt es keine Fallbacksolution. Falls etwas nicht klappt, kann das ganze einfach heruntergefahren werden und wieder auf der lokalen Umgebung bearbeitet werden.
 
 # Kontrollieren
+
 Die Kontrolle ist sehr wichtig. So kann versichert werden, dass das Enprodukt funktioniert und alle Tests erfolgreich geklappt haben. 
 
 ## Testing
@@ -233,11 +285,9 @@ In diesen Tests wird die Funktionalität des entwickelten Musik Event Finders ge
 | Produktive Website Testen | Website startet und alle Funktionen funktionieren | Die Website kann über die erstellte Elastic IP aufgerufen werden  (http://54.156.170.152/) und alle Funktionen funktionieren. |
 
 
-#### Lokale Umgebung:
+#### Umgebung:
 
-#### Produktive Umgebung:
-
-
+![Umgebung](../Pictures/TestUmgebung.gif)
 
 > Back [Page](https://lauradubach.github.io/Semesterarbeit3/Sites/Teil%202%20Konzeption.html)
 >

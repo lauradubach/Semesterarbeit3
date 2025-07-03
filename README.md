@@ -6,7 +6,7 @@
 
 ## Zusammenfassung
 
-Im Rahmen dieser Semesterarbeit wird ein Microservice entwickelt, der Nutzern das Finden von Musikveranstaltungen erleichtert. Der Service greift auf externe Event-APIs zu, stellt gefilterte Eventdaten über eine REST-Schnittstelle bereit und speichert Nutzerinformationen sowie deren Präferenzen in einer Datenbank. Ziel ist es, eine erweiterbare, moderne und praxisnahe Lösung mit echtem Anwendungsbezug umzusetzen.
+Im Rahmen dieser Semesterarbeit wird ein Microservice entwickelt, der Nutzern das Finden von Musikveranstaltungen erleichtert. Der Service greift auf eine externe Event-API zu, stellt gefilterte Eventdaten über eine REST-Schnittstelle bereit und speichert Nutzerinformationen sowie deren Präferenzen in einer Datenbank. Ziel ist es, eine erweiterbare, moderne und praxisnahe Lösung mit echtem Anwendungsbezug umzusetzen.
 
 ## Kurze Übersicht
 

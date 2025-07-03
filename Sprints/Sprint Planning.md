@@ -1,3 +1,11 @@
+# Sprint Planning
+
+Entwicklung eines Microservices für Event-Empfehlungen
+
+**Zeitraum:** 05.05.2025 – 09.07.2025  
+**Methode:** SCRUM  
+**Anzahl Sprints:** 4 (Sprint 1 verkürzt)
+
 - [Sprint Planning](#sprint-planning)
   - [Sprint 1, 05.05 – 09.05 (5 Tage)](#sprint-1-0505--0905-5-tage)
     - [Aufgaben](#aufgaben)
@@ -12,14 +20,6 @@
   - [Sprint 4: 24.06 – 09.07 (16 Tage)](#sprint-4-2406--0907-16-tage)
     - [Aufgabenverteilung](#aufgabenverteilung-3)
     - [Nächste Schritte](#nächste-schritte-3)
-
-# Sprint Planning
-
-Entwicklung eines Microservices für Event-Empfehlungen
-
-**Zeitraum:** 05.05.2025 – 09.07.2025  
-**Methode:** SCRUM  
-**Anzahl Sprints:** 4 (Sprint 1 verkürzt)
 
 ## Sprint 1, 05.05 – 09.05 (5 Tage)
 
