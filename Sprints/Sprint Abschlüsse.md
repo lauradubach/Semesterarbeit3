@@ -5,16 +5,36 @@
     - [Abgeschlossene Story\`s](#abgeschlossene-storys)
     - [Besprechung](#besprechung)
   - [Sprint-Retrospektive 1](#sprint-retrospektive-1)
+    - [Sonnenschein](#sonnenschein)
+    - [Auftrieb](#auftrieb)
+    - [Gewitterwolken](#gewitterwolken)
+    - [Sandbalast](#sandbalast)
+    - [Ausblick](#ausblick)
   - [Sprint Review 2](#sprint-review-2)
     - [Abgeschlossene Story\`s](#abgeschlossene-storys-1)
     - [Besprechung](#besprechung-1)
   - [Sprint-Retrospektive 2](#sprint-retrospektive-2)
+    - [Sonnenschein](#sonnenschein-1)
+    - [Auftrieb](#auftrieb-1)
+    - [Gewitterwolken](#gewitterwolken-1)
+    - [Sandballast](#sandballast)
+    - [Ausblick](#ausblick-1)
   - [Sprint Review 3](#sprint-review-3)
     - [Abgeschlossene Story\`s](#abgeschlossene-storys-2)
   - [Sprint-Retrospektive 3](#sprint-retrospektive-3)
+    - [Sonnenschein](#sonnenschein-2)
+    - [Auftrieb](#auftrieb-2)
+    - [Gewitterwolken](#gewitterwolken-2)
+    - [Sandballast](#sandballast-1)
+    - [Ausblick](#ausblick-2)
   - [Sprint Review 4](#sprint-review-4)
     - [Abgeschlossene Story\`s](#abgeschlossene-storys-3)
   - [Sprint-Retrospektive 4](#sprint-retrospektive-4)
+    - [Sonnenschein](#sonnenschein-3)
+    - [Auftrieb](#auftrieb-3)
+    - [Gewitterwolken](#gewitterwolken-3)
+    - [Sandballast](#sandballast-2)
+    - [Ausblick](#ausblick-3)
 
 ## Sprint Review 1
 
@@ -64,6 +84,29 @@ Das Gespräch verlauf super. All meine Fragen konnten beantwortet werden und Cor
 
 ![Retrospektive1](../Pictures/Retrospektive1.png)
 
+### Sonnenschein
+
+- Klare Zieldefinitionen
+- Realistischer Zeitplan mit Meilensteinen
+- Transparente Sprintplanung
+
+### Auftrieb
+
+- Erfolgreicher Projektstart
+- Strukturierte Einrichtung Projektbasis
+- Detaillierte Anforderungsanalyse
+
+### Gewitterwolken
+
+- Unsicherheit API-Funktionalitäten
+
+### Sandbalast
+
+- Technisches Wissen zur API fehlt aktuell
+
+### Ausblick
+
+- API-Recherche priorisieren
 
 ## Sprint Review 2
 
@@ -126,6 +169,31 @@ Das Gespräch verlief super. All meine Fragen konnten beantwortet werden und Cor
 
 ![Retrospektive2](../Pictures/Retrospektive2.png)
 
+### Sonnenschein
+
+- Alle geplanten Aufgaben abgeschlossen
+- Zusätzliche Aufgabe („Risikomatrix“) erfolgreich integriert
+- Gutes Zeitmanagement
+- Alle Deadlines eingehalten
+
+### Auftrieb
+
+- Effiziente Aufgabenbearbeitung
+- Flexibilität im Umgang mit neuen Aufgaben
+- Klare Organisation und Fokus
+
+### Gewitterwolken
+
+- Risiken wurden zu spät eingeplant
+
+### Sandballast
+
+- Fehlende frühzeitige Risikobetrachtung
+
+### Ausblick
+
+- Risiken und Zusatzaufgaben frühzeitig identifizieren und einplanen
+
 ## Sprint Review 3
 
 ### Abgeschlossene Story`s
@@ -151,6 +219,30 @@ Folgendes wurde genau umgesetzt:
 ## Sprint-Retrospektive 3
 
 ![Retrospektive3](../Pictures/Retrospektive3.png)
+
+### Sonnenschein
+
+- Alle Aufgaben erfolgreich abgeschlossen
+- Sprintziele erreicht
+
+### Auftrieb
+
+- Unterstützung durch den Dozenten
+- Durchhaltevermögen trotz Schwierigkeiten
+
+### Gewitterwolken
+
+- Projektumsetzung war komplexer als erwartet
+- Unerwartete Hürden beim Programmieren
+
+### Sandballast
+
+- Technische Schwierigkeiten beim Programmieren
+- Zeitverlust durch unerwartete Probleme
+
+### Ausblick
+
+- Technische Hürden frühzeitig erkennen
 
 ## Sprint Review 4
 
@@ -180,3 +272,30 @@ Folgendes wurde genau umgesetzt:
 ## Sprint-Retrospektive 4
 
 ![Retrospektive4](../Pictures/Retrospektive4.png)
+
+### Sonnenschein
+
+- Projektabschluss erfolgreich
+- Sprintziele erreicht
+- Reflexion und Dokumentation finalisiert
+- Präsentation vorbereitet
+
+### Auftrieb
+
+- Gutes Zeitmanagement gegen Ende
+- Strukturierter Abgabeordner
+- Probedurchlauf der Präsentation
+
+### Gewitterwolken
+
+- Hoher Aufwand für die finale Dokumentation
+
+### Sandballast
+
+- Zeitdruck gegen Ende der Phase
+- Nervosität vor der Präsentation 
+
+### Ausblick
+
+- Lessons Learned frühzeitig erfassen
+- Mehr Zeitpuffer für Abschlussphase und Präsentation einplanen
