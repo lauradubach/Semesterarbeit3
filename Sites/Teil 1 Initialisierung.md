@@ -1,9 +1,9 @@
 # Teil 1 Initialisierung
 
-In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hintergrund und die Relevanz des Themas. Sie definiert das Ziel der Arbeit und formuliert die zentralen Fragen. Zudem gibt die Intialisierung einen kurzen Überblick über den Aufbau der Arbeit um eine klare Orientierung zu bieten.
+In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hintergrund und die Relevanz des Themas. Sie definiert das Ziel der Arbeit und formuliert die zentralen Fragen. Zudem gibt die Initialisierung einen kurzen Überblick über den Aufbau der Arbeit um eine klare Orientierung zu bieten.
 
 - [Teil 1 Initialisierung](#teil-1-initialisierung)
-- [Versionenverzeichniss](#versionenverzeichniss)
+- [Versionenverzeichnis](#versionenverzeichnis)
 - [Aufgabenstellung](#aufgabenstellung)
   - [Ausgangslage](#ausgangslage)
   - [Ziele](#ziele)
@@ -25,7 +25,7 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
     - [Dozenten](#dozenten)
 - [Datensicherung](#datensicherung)
 
-# Versionenverzeichniss
+# Versionenverzeichnis
 
 | Version | Datum  | Autor | Bemerkung | 
 | ------- | ------ | ----  | --------- |
@@ -41,9 +41,9 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
 | 1.8 | 20.05.2025 | Laura Dubach | Ist & Soll, Implementierungsplan und Risikomatrix erstellen dokumentieren |
 | 1.9 | 23.05.2025 | Laura Dubach | Site Konzeption fertigstellen |
 | 2.0 | 26.05.2025 | Laura Dubach | Sprint Abschluss 2 schreiben und abschliessen |
-| 2.1 | 28.05.2025 | Laura Dubach | Start mit Datenbank diagramm und Pipline erste tests auf Github |
+| 2.1 | 28.05.2025 | Laura Dubach | Start mit Datenbank diagramm und Pipline, erste tests auf Github |
 | 2.2 | 02.06.2025 | Laura Dubach | Sprint Abschluss 2 beendet |
-| 2.3 | 03.06.2025 | Laura Dubach | Start Sprint 3, dokumentation Vorbereiten |
+| 2.3 | 03.06.2025 | Laura Dubach | Start Sprint 3, dokumentation vorbereiten |
 | 2.4 | 04.06.2025 | Laura Dubach | Umsetzung starten |
 | 2.5 | 20.06.2025 | Laura Dubach | Umsetzung fertigstellen |
 | 2.6 | 23.06.2025 | Laura Dubach | Sprint Abschluss 3 |
@@ -103,7 +103,7 @@ Die Herausforderung besteht darin, einen eigenständigen Microservice zu entwick
 
 ## SCRUM-Überblick
 
-Im Rahmen der Entwicklung des Microservices für personalisierte, ortsbezogene Event-Empfehlungen wird SCRUM als agiles Projektmanagement-Framework eingesetzt, um strukturierte Fortschritte zu ermöglichen. Das Projekt wird in mehrere Sprints unterteilt, in denen jeweils konkrete Teilziele wie zum Beispiel die Anbindung der externen Event-API, die Entwicklung der Filterlogik oder die Integration der REST-API fokussiert bearbeitet werden. Zu Beginn jedes Sprints erfolgt eine Sprintplanung, in der die anstehenden Aufgaben priorisiert und aufgeteilt werden. Nach jedem Sprint wird ein Review durchgeführt. Durch den Einsatz von SCRUM bleibt man flexibel und kann trotz der technischen Komplexität effektiv auf Veränderungen und Herausforderungen reagieren.
+Im Rahmen der Entwicklung des Microservices für personalisierte, ortsbezogene Event-Empfehlungen wird SCRUM als agiles Projektmanagement-Framework eingesetzt, um strukturierte Fortschritte zu ermöglichen. Das Projekt wird in mehrere Sprints unterteilt, in denen jeweils konkrete Teilziele wie zum Beispiel die Anbindung der externen Event-API, die Entwicklung der Filterlogik oder die Integration der REST-API fokussiert, bearbeitet werden. Zu Beginn jedes Sprints erfolgt eine Sprintplanung, in der die anstehenden Aufgaben priorisiert und aufgeteilt werden. Nach jedem Sprint wird ein Review durchgeführt. Durch den Einsatz von SCRUM bleibt man flexibel und kann trotz der technischen Komplexität effektiv auf Veränderungen und Herausforderungen reagieren.
 
 ## Defenition of Done
 

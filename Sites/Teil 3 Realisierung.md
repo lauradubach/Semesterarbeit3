@@ -39,7 +39,7 @@ Das Datenbankmodell besteht aus zwei Tabellen: users und favorites. Jeder Benutz
 
 Die Ticketmaster API habe ich auf folgender Site bezogen: (https://developer-acct.ticketmaster.com/)
 
-Bevor ich Sie in mein Service eingebunden habe, habe ich sie getestet. Das Test Skript liegt hier: [Skripts](../Scripts)
+Bevor ich diese in mein Service eingebunden habe, habe ich sie getestet. Das Test Skript liegt hier: [Skripts](../Scripts)
 
 ## Github Secrets
 
@@ -121,7 +121,7 @@ Mein ganzer Code: [Produktionsumgebung](https://github.com/lauradubach/Produktio
 
 #### Favorites hinzufügen:
 
-Als ich die Favoriten funktion hinzufügen wollte hatte ich einige Probleme und musste Troubleshooten. Hier sind einige Herausforderungen die ich hatte:
+Als ich die Favoriten funktion hinzufügen wollte hatte ich einige Probleme und musste Troubleshooten. Hier sind einige Herausforderungen, die ich hatte:
 
 Im ui/routes.py (im login und register) musste ich folgendes hinzufügen:
 
@@ -139,13 +139,13 @@ return {
 
 Im models/user.py musste `user_id = Integer()` im TokenOut hinzugefügt werden, da die User ID im Json File nicht übergeben wurde.
 
-Damit die bestehende Suche bleibt und der Stern angeklickt bleibt, wenn man einen refresh der Seite macht, habe ich im html dies hinzugefügt:
+Damit die bestehende Suche- und der Stern angeklickt bleibt, wenn man einen refresh der Seite macht, habe ich im html dies hinzugefügt:
 
 `<input type="hidden" name="next" value="{{ request.url }}">`
 
 -> Auch im favorites/routes musste dies entsprechend ergänzt werden.
 
-Ich musste Javascript und CSS integrieren, da sonst beim Klick auf einen Stern die Füllung sich nicht verändert. Das Skript macht nichts anderes als: den Klick abzufangen, den Server anzufragen (mit fetch) und den Stern einfärben (CSS-Klasse setzen)
+Ich musste Javascript und CSS integrieren, da beim Klick auf einen Stern, die Füllung sich nicht verändert hatte. Das Skript macht nichts anderes als: Den Klick abzufangen, den Server anzufragen (mit fetch) und den Stern einfärben (CSS-Klasse setzen)
 
 Dies ist das Skript:
 
@@ -192,7 +192,7 @@ Dies ist das Skript:
 
 #### Migration in die Produktivumgebung:
 
-Die Seite über die erstellte Elastic IP konnte ich aufrufen, die Login Page erscheint, sobald ich mich jedoch eingeloggt habe kam einfach nichts mehr.
+Die Seite über die erstellte Elastic IP konnte ich aufrufen, die Login Page erschien, sobald ich mich jedoch eingeloggt hatte, kam nichts mehr.
 
 Das ganze Code snippet im ui/routes vom Login und Register musste abgeändert werden, hier der Login Code:
 
@@ -255,7 +255,7 @@ Die funktion Get und Post musste getrennt werden und `response = requests.post` 
 
 ## Fallbacksolution
 
-Da das Projekt nicht für den Produktiven Gebrauch gedacht ist, da das ganze sich auf einem Learner LAB befindet, benötigt es keine Fallbacksolution. Falls etwas nicht klappt, kann das ganze einfach heruntergefahren werden und wieder auf der lokalen Umgebung bearbeitet werden.
+Da das Projekt nicht für den Produktiven Gebrauch gedacht ist, weil es sich auf einem Learner LAB befindet, benötigt es keine Fallbacksolution. Falls etwas nicht klappt, kann das ganze einfach heruntergefahren werden und wieder auf der lokalen Umgebung bearbeitet werden.
 
 # Kontrollieren
 

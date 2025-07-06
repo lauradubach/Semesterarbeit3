@@ -35,8 +35,8 @@ Das Projekt vereint moderne Webtechnologien, Cloud-Infrastruktur und API-Integra
 
 ### Persönliche Reflexion
 
-Insgesamt bin ich mit dem Verlauf des Projekts sehr zufrieden. Ich konnte alle geplanten Aufgaben erfolgreich umsetzen und habe ein funktionierendes System erstellt, das Musikveranstaltungen über eine externe API abfragt. Die Projektumsetzung war allerdings anspruchsvoller als erwartet, insbesondere die technischen Herausforderungen beim Programmieren stellten sich als deutlich komplexer heraus. In diesen Phasen habe ich gezielt die Unterstützung des Dozenten genutzt, was mir sehr geholfen hat. Durch diese Zusammenarbeit konnte ich viele Hürden überwinden und mein technisches Verständnis weiter ausbauen.
-Die Zeitplanung war grundsätzlich gut, aber durch die ungeplanten Schwierigkeiten geriet ich zwischenzeitlich etwas unter Druck. In Zukunft möchte ich Pufferzeiten besser einplanen und potenzielle Risiken früher berücksichtigen.
+Insgesamt bin ich mit dem Verlauf des Projekts sehr zufrieden. Ich konnte alle geplanten Aufgaben erfolgreich umsetzen und habe ein funktionierendes System erstellt, welches Musikveranstaltungen über eine externe API abfragt. Die Projektumsetzung war allerdings anspruchsvoller als erwartet, insbesondere die technischen Herausforderungen beim Programmieren stellten sich als deutlich komplexer heraus. In diesen Phasen habe ich gezielt die Unterstützung des Dozenten genutzt, was mir sehr geholfen hat. Durch diese Zusammenarbeit konnte ich viele Hürden überwinden und mein technisches Verständnis weiter ausbauen.
+Die Zeitplanung war grundsätzlich gut, aber durch die ungeplanten Schwierigkeiten geriet ich zwischenzeitlich etwas unter Druck. In Zukunft möchte ich Pufferzeiten besser einplanen und potenzielle Risiken früher erkennen und berücksichtigen.
 
 #### Herausforderungen und Lösungen
 

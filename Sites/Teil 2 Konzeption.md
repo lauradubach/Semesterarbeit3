@@ -62,7 +62,7 @@ Nun gehen wir ins Thema Konzeption über. In diesem Kapitel wird das ganze Proje
 
 # Informieren
 
-In diesem Kapitel werde ich alle Informationen zusammentragen, um das Projekt umsetzten zu können.
+In diesem Kapitel werde ich alle Informationen zusammentragen, um das Projekt umsetzen zu können.
 
 ## Was ist SCRUM?
 
@@ -98,20 +98,20 @@ SCRUM ist ein agiles Rahmenwerk (Framework) für Projektmanagement, das vor alle
 
 ### Wieso SCRUM
 
-Ich habe mich bewusst für SCRUM als Vorgehensmodell entschieden, weil es ein etabliertes, agiles Framework ist. SCRUM ermöglicht es, in kurzen Zyklen (Sprints) kontinuierlich funktionsfähige Ergebnisse zu liefern, die regelmäßig überprüft und angepasst werden können.
+Ich habe mich bewusst für SCRUM als Vorgehensmodell entschieden, weil es ein etabliertes, agiles Framework ist. SCRUM ermöglicht es, in kurzen Zyklen (Sprints) kontinuierlich, funktionsfähige Ergebnisse zu liefern, die regelmäßig überprüft und angepasst werden können.
 
 Durch die klare Struktur, regelmäßigen Events (Sprint Planning, Sprint Review, Retrospektive) und einem fokussierten Backlog-Management entsteht ein hohes Maß an Transparenz, Planbarkeit und Flexibilität.
 
-Ein weiterer entscheidender Vorteil von SCRUM ist die enge Einbindung von Feedback. So kann frühzeitig auf Veränderungen oder neue Erkenntnisse reagiert werden, ohne die gesamte Projektplanung überarbeiten zu müssen. Das fördert eine nutzerzentrierte Entwicklung und reduziert das Risiko, am Bedarf vorbei zu arbeiten.
+Ein weiterer, entscheidender Vorteil von SCRUM ist, die enge Einbindung von Feedback. So kann frühzeitig auf Veränderungen oder neue Erkenntnisse reagiert werden, ohne die gesamte Projektplanung überarbeiten zu müssen. Dies fördert eine nutzerzentrierte Entwicklung und reduziert das Risiko, am Bedarf vorbei zu arbeiten.
 
-Zusätzlich haben wir im Unterricht SCRUM Theoretisch angeschaut und nun kann ich es Praktisch lernen umzusetzten. natürlich wird einiges am Standard Prozess angepasst, da ich das Projekt alleine durchführe. Hier ist zum Beispiel ein Daily SCRUM nicht notwendig.
+Zusätzlich haben wir im Unterricht SCRUM in der Theorie angeschaut und nun kann ich es im Praktischen lernen umzusetzten. Natürlich wird einiges am Standard Prozess angepasst, da ich das Projekt alleine durchführe. Hier ist zum Beispiel ein Daily SCRUM nicht notwendig.
 
 > (Chat GPT) [Quelle](https://chatgpt.com/share/68230b9b-2d9c-800e-a1eb-64bd9fe8ed96)
 
 
 ## Ausgangslage & Motivation
 
-In Zeiten zunehmender Digitalisierung und Vernetzung steigt das Bedürfnis nach personalisierten Diensten. Musikliebhaber/innen suchen gezielt nach Veranstaltungen, die ihren Interessen entsprechen und gleichzeitig gut erreichbar sind. Der Markt bietet zwar verschiedene Event-Plattformen, doch häufig fehlt es an einer modularen, leicht integrierbaren Lösung, die als eigenständiger Microservice betrieben werden kann.
+In Zeiten zunehmender Digitalisierung und Vernetzung steigt das Bedürfnis nach personalisierten Diensten. Musikliebhaber/innen suchen gezielt nach Veranstaltungen, die ihren Interessen entsprechen und gleichzeitig gut erreichbar sind. Der Markt bietet zwar verschiedene Event-Plattformen, jedoch fehlt es häufig an einer modularen, leicht integrierbaren Lösung, die als eigenständiger Microservice betrieben werden kann.
 Diese Lücke soll durch die Entwicklung eines Microservices geschlossen werden, der gezielt ortsbezogene Event-Empfehlungen im Musikbereich ermöglicht. Die persönliche Affinität zur Thematik, das Interesse an Microservice-Architekturen und der technologische Reiz motivieren zusätzlich zur Umsetzung des Vorhabens.
 
 ## Anforderungen erheben
@@ -134,7 +134,7 @@ Nicht-funktionale Anforderungen:
 
 ## Relevanz und Nutzen eines Event-Finders
 
-Ein Event-Finder bietet für Nutzer/innen einen klaren Mehrwert. Statt selbst mühsam nach Veranstaltungen zu suchen, erhalten sie gezielte, persönliche Empfehlungen abgestimmt auf Standort, Musikgeschmack und Verfügbarkeit.
+Ein Event-Finder bietet für Nutzer/innen einen klaren Mehrwert. Statt selbst mühsam nach Veranstaltungen zu suchen, erhalten sie gezielte, persönliche Empfehlungen, abgestimmt auf Standort, Musikgeschmack und Verfügbarkeit.
 Auch für Plattformbetreiber oder Drittanbieter ist der Microservice interessant. Dank seiner modularen Architektur lässt er sich flexibel in bestehende Systeme integrieren. So entstehen neue Möglichkeiten für personalisiertes Marketing, datenbasierte Entscheidungen und Nutzerbindung.
 Der Einsatz moderner Technologien wie Docker, REST-APIs und Cloud-Deployment sorgt zudem für Zukunftsfähigkeit und erleichtert die Wartung sowie Weiterentwicklung des Systems.
 
@@ -153,7 +153,7 @@ Das User Interface dient zur Visualisierung der API-Endpunkte. Es wird als einfa
 Das Backend-Framework bildet das zentrale Element des Microservices. Es implementiert die REST-API, verarbeitet Anfragen, leitet sie an die Filterlogik weiter und koordiniert alle internen Prozesse.
 
 #### Datenbank
-Hier werden Benutzerinformationen, Präferenzen oder Filtereinstellungen, gespeichert. Eine relationale Datenbank ist über SQLAlchemy angebunden.
+Hier werden Benutzerinformationen, Präferenzen oder Filtereinstellungen gespeichert. Eine relationale Datenbank ist über SQLAlchemy angebunden.
 
 #### SQLAlchemy
 Es ermöglicht eine objektorientierte Datenbankanbindung und erleichtert Datenmanipulation und -abfragen.
@@ -183,7 +183,7 @@ Die Pipeline automatisiert den Build-, Test- und Deploymentprozess. Bei jedem Co
 Der Service arbeitet nicht mit Live-Datenströmen. Daten werden per Anfrage oder geplanten Intervallen abgerufen – keine Echtzeit-Ereignisverarbeitung.
 
 #### Rechtekonzept
-Es wird kein Rollen- oder Berechtigungsmanagement umgesetzt. Alle Anfragen werden als gleichberechtigte Benutzer behandelt einfache API-Nutzung ohne Benutzerrollen.
+Es wird kein Rollen- oder Berechtigungsmanagement umgesetzt. Alle Anfragen werden als gleichberechtigte Benutzer behandelt, einfache API-Nutzung ohne Benutzerrollen.
 
 #### Produktive Veröffentlichung
 Der Service wird nicht öffentlich zugänglich gemacht oder als dauerhaft produktiv betrieben. Die Veröffentlichung dient nur zu Demonstrations- und Evaluierungszwecken.
@@ -205,7 +205,7 @@ Hier werde ich das ganze Projekt planen. Es wird ein Zeitplan erstellt, wann wel
 ## Meilensteine
 ### Initialisierung
 
-In der Initialisierungsphase wird das Projekt offiziell gestartet. Ziel ist es, eine klare Projektgrundlage zu schaffen. Dazu gehören die Definition von Zielen, die Identifikation von Stakeholdern, die grobe Planung (Zeit, Budget, Ressourcen) sowie die Erstellung eines Projektauftrags. Risiken und Chancen werden frühzeitig analysiert, und es wird geprüft, ob das Projekt wirtschaftlich und realistisch durchführbar ist.
+In der Initialisierungsphase wird das Projekt offiziell gestartet. Ziel ist es, eine klare Projektgrundlage zu schaffen. Dazu gehören die Definition von Zielen, die Identifikation von Stakeholdern, die grobe Planung (Zeit, Budget, Ressourcen) sowie die Erstellung eines Projektauftrags. Risiken und Chancen werden frühzeitig analysiert und es wird geprüft, ob das Projekt wirtschaftlich und realistisch durchführbar ist.
 
 ### Konzeption
 
@@ -217,7 +217,7 @@ Jetzt beginnt die eigentliche Umsetzung: Entwicklung, Konfiguration, Tests und I
 
 ### Abschluss
 
-Das Projekt wird formal beendet. Es finden eine Abnahme, eine Übergabe an den Betrieb sowie ggf. eine Schulung der Nutzer statt. Außerdem werden Lessons Learned dokumentiert, um aus dem Projekt für zukünftige Vorhaben zu lernen.
+Das Projekt wird formal beendet. Es finden eine Abnahme, eine Übergabe an den Betrieb sowie ggf. eine Schulung der Nutzer statt. Ausserdem werden Lessons Learned dokumentiert, um aus dem Projekt für zukünftige Vorhaben zu lernen.
 
 ## Ist und Soll
 
@@ -236,7 +236,7 @@ Ziel ist die Entwicklung eines eigenständigen Microservices, der Musikveranstal
 Spezifizierung Microservice:
 
 - Event-Service: Holt Musikveranstaltungen über eine externe Event-API.
-- User-Service: Verwaltet Nutzerinformationen und -präferenzen.
+- User-Service: Verwalten von Nutzerinformationen und -präferenzen.
 - Recommendation-Service: Wendet Filterlogik
 - API-Gateway (optional): Dient als zentraler Zugangspunkt für Clients.
 
@@ -281,7 +281,7 @@ Hier wird grob dargestellt, wie in diesem Projekt vorgegangen wird.
 
 ![Implementierungsplan](../Pictures/Implementierungsplan.png)
 
-Der Implementierungsplan für den Event-Microservice zeigt die sieben Hauptschritte, die für die erfolgreiche Umsetzung notwendig sind. Jeder dieser Schritte ist essenziell für das Gesamtprodukt kein Schritt kann ausgelassen werden, da sie aufeinander aufbauen und zusammen die Funktionsfähigkeit, Sicherheit und Wartbarkeit des Systems gewährleisten.
+Der Implementierungsplan für den Event-Microservice zeigt die sieben Hauptschritte, welche für die erfolgreiche Umsetzung notwendig sind. Jeder dieser Schritte ist essenziell für das Gesamtprodukt. Kein Schritt kann ausgelassen werden, da sie aufeinander aufbauen und zusammen die Funktionsfähigkeit, Sicherheit und Wartbarkeit des Systems gewährleisten.
 
 PS: QS bedeutet Qualitäts Sicherung
 
@@ -302,7 +302,7 @@ Die SWOT-Analyse gibt einen kompakten Überblick über die wichtigsten internen 
 ### Warum Docker?
 
 Docker ermöglicht es, den entwickelten Microservice in einem standardisierten Container-Format bereitzustellen. Dadurch ist sichergestellt, dass die Anwendung in verschiedenen Umgebungen – lokal, in der Cloud oder auf CI/CD-Systemen – zuverlässig und konsistent läuft.
-Für dieses Projekt bedeutet das: Der Service lässt sich leicht testen, in Pipelines integrieren und auf verschiedenen Systemen ausrollen, ohne dass lokale Abhängigkeiten berücksichtigt werden müssen.
+Für dieses Projekt bedeutet dies: Der Service lässt sich leicht testen, in Pipelines integrieren und auf verschiedenen Systemen ausrollen, ohne dass lokale Abhängigkeiten berücksichtigt werden müssen.
 
 ### Warum AWS?
 
@@ -357,7 +357,7 @@ Im Vergleich standen unter anderem die Ticketmaster API und die Eventbrite API. 
 
 | Kriterium             | Ticketmaster API                                           | Eventbrite API                                             |
 |-----------------------|------------------------------------------------------------|------------------------------------------------------------|
-| Datenbasis            | Große, internationale Event-Datenbank                      | Fokus auf lokale, kleinere Veranstaltungen                 |
+| Datenbasis            | Grosse, internationale Event-Datenbank                      | Fokus auf lokale, kleinere Veranstaltungen                 |
 | Dokumentation         | Sehr gut strukturiert und umfassend                        | Gut, mit vielen Beispielen                                 |
 | Filtermöglichkeiten   | Umfangreich (Ort, Genre, Datum usw.)                       | Eingeschränkter Umfang                                     |
 | Performance           | Sehr zuverlässig und performant                            | Variiert, abhängig von Umfang und Abfrage                  |
