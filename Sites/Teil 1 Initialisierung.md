@@ -50,7 +50,8 @@ In diesem Kapitel wird ins Thema der Arbeit eingeführt. Es beschreibt den Hinte
 | 2.7 | 25.06.2025 | Laura Dubach | Sprint Start 4, Umsetzung fertig dokumentieren, testing starten |
 | 2.8 | 26.06.2025 | Laura Dubach | Tests dokumentieren |
 | 2.9 | 02.07.2025 | Laura Dubach | Abschluss der Arbeit dokumentieren |
-
+| 3.0 | 06.07.2025 | Laura Dubach | Letzter Sprint dokumentieren, korrektur Rechtschreibung |
+| 3.1 | 07.07.2025 | Laura Dubach | Dokumentation fertigstellen |
 
 # Aufgabenstellung
 

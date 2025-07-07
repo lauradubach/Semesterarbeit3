@@ -35,10 +35,10 @@ Nun gehen wir ins Thema Konzeption über. In diesem Kapitel wird das ganze Proje
 - [Planen](#planen)
   - [Zeitplan](#zeitplan)
   - [Meilensteine](#meilensteine)
-    - [Initialisierung](#initialisierung)
-    - [Konzeption](#konzeption)
-    - [Realisieren](#realisieren)
-    - [Abschluss](#abschluss)
+    - [1. Initialisierung](#1-initialisierung)
+    - [2. Konzeption](#2-konzeption)
+    - [3. Realisieren](#3-realisieren)
+    - [4. Abschluss](#4-abschluss)
   - [Ist und Soll](#ist-und-soll)
     - [Ist Zustand](#ist-zustand)
     - [Soll Zustand](#soll-zustand)
@@ -203,19 +203,19 @@ Hier werde ich das ganze Projekt planen. Es wird ein Zeitplan erstellt, wann wel
 ![Zeitplan](../Pictures/Zeitplan.png)
 
 ## Meilensteine
-### Initialisierung
+### 1. Initialisierung
 
 In der Initialisierungsphase wird das Projekt offiziell gestartet. Ziel ist es, eine klare Projektgrundlage zu schaffen. Dazu gehören die Definition von Zielen, die Identifikation von Stakeholdern, die grobe Planung (Zeit, Budget, Ressourcen) sowie die Erstellung eines Projektauftrags. Risiken und Chancen werden frühzeitig analysiert und es wird geprüft, ob das Projekt wirtschaftlich und realistisch durchführbar ist.
 
-### Konzeption
+### 2. Konzeption
 
 In dieser Phase wird das Projekt inhaltlich konkretisiert. Anforderungen werden detailliert erhoben und dokumentiert (z. B. als User Stories), Lösungsansätze erarbeitet und bewertet. Es entsteht ein Fach- und ggf. ein technisches Konzept, das die Grundlage für die spätere Umsetzung bildet.
 
-### Realisieren
+### 3. Realisieren
 
-Jetzt beginnt die eigentliche Umsetzung: Entwicklung, Konfiguration, Tests und Integration der Komponenten. Die Arbeit erfolgt meist iterativ (z. B. in Sprints), um regelmäßig funktionierende Zwischenstände zu liefern. Parallel erfolgt oft auch die Vorbereitung von Schulungen und die Erstellung von Benutzerdokumentationen.
+Jetzt beginnt die eigentliche Umsetzung: Entwicklung, Konfiguration, Tests und Integration der Komponenten. Die Arbeit erfolgt meist iterativ (z. B. in Sprints), um regelmäßig funktionierende Zwischenstände zu liefern.
 
-### Abschluss
+### 4. Abschluss
 
 Das Projekt wird formal beendet. Es finden eine Abnahme, eine Übergabe an den Betrieb sowie ggf. eine Schulung der Nutzer statt. Ausserdem werden Lessons Learned dokumentiert, um aus dem Projekt für zukünftige Vorhaben zu lernen.
 
@@ -238,7 +238,6 @@ Spezifizierung Microservice:
 - Event-Service: Holt Musikveranstaltungen über eine externe Event-API.
 - User-Service: Verwalten von Nutzerinformationen und -präferenzen.
 - Recommendation-Service: Wendet Filterlogik
-- API-Gateway (optional): Dient als zentraler Zugangspunkt für Clients.
 
 ## Risikomatrix
 
@@ -248,7 +247,7 @@ Spezifizierung Microservice:
 
 | Risiko | Eintritt | Auswirkung | Risikobewertung (Matrixfeld) | Gegenmaßnahmen |
 |--------|----------|------------|-------------------------------|----------------|
-| Externe API nicht erreichbar oder ändert sich | Mittel | Hoch | **High: 12** | Fallback-Strategie, Fehlerbehandlung, API-Abstraktion, regelmäßige Tests |
+| Externe API nicht erreichbar oder ändert sich | Mittel | Hoch | **High: 12** | Fehlerbehandlung, API-Abstraktion, regelmäßige Tests |
 | Fehlkonfiguration von Docker/Deployment | Mittel | Mittel-Hoch | **High: 8** | Tests in dev/staging-Umgebung, automatisiertes Deployment, Logging |
 | Performanceprobleme bei vielen API-Abfragen | Niedrig-Mittel | Mittel | **Medium: 5** | Caching einführen, Limitierung von Abfragen, asynchrone Verarbeitung |
 

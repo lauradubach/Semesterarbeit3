@@ -1,7 +1,7 @@
 import requests
 import json
 
-# Lade die Konfigurationsdatei
+# Konfigurationsdatei laden
 with open('./config.json', 'r') as f:
     config = json.load(f)
 
@@ -9,8 +9,8 @@ API_KEY = config["TICKETMASTER_API_KEY"]
 url = "https://app.ticketmaster.com/discovery/v2/events.json"
 params = {
     "apikey": API_KEY,
-    "countryCode": "DE",  # Zum Beispiel für Deutschland
-    "classificationName": "music"  # Du kannst nach Kategorie wie Musik filtern
+    "countryCode": "DE",
+    "classificationName": "music" 
 }
 
 def fetch_and_structure_events():
@@ -31,7 +31,6 @@ def fetch_and_structure_events():
                 "url": event.get("url", "No URL available")
             }
 
-            # Füge den Künstlernamen hinzu, falls vorhanden
             if "attractions" in event:
                 artists = [artist.get("name") for artist in event["attractions"]]
                 event_data["artists"] = ", ".join(artists) if artists else "No artist available"

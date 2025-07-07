@@ -27,16 +27,13 @@ Im Kapitel Auswerten wird der Abschluss des Projektes beschrieben. Es wird Zusam
 
 ## Zusammenfassung
 
-Im Rahmen des Projekts wurde ein funktionsfähiger Microservice mit einer REST-API zur Abfrage von Musikveranstaltungen erfolgreich entwickelt. Die Anwendung greift über eine angebundene externe Event-API auf Veranstaltungsdaten zu und bietet umfangreiche Filterfunktionen zur gezielten Suche.
-Zur effizienten Bereitstellung wurde der Microservice containerisiert und über Docker ausgeführt. Die Auslieferung erfolgt automatisiert über eine Deployment-Pipeline auf AWS. Zusätzlich wurde eine Datenbank integriert, um Nutzerinformationen dauerhaft zu speichern und eine personalisierte Nutzung zu ermöglichen.
-Das Projekt vereint moderne Webtechnologien, Cloud-Infrastruktur und API-Integration zu einem skalierbaren, modular aufgebauten Gesamtsystem.
+Im Rahmen des Projekts wurde ein funktionsfähiger Microservice mit einer REST-API zur Abfrage von Musikveranstaltungen erfolgreich entwickelt. Die Anwendung greift über eine angebundene externe Event-API auf Veranstaltungsdaten zu und bietet umfangreiche Filterfunktionen zur gezielten Suche. Zur effizienten Bereitstellung wurde der Microservice containerisiert und über Docker ausgeführt. Die Auslieferung erfolgt automatisiert über eine Deployment-Pipeline auf AWS. Zusätzlich wurde eine Datenbank integriert, um Nutzerinformationen dauerhaft zu speichern und eine personalisierte Nutzung zu ermöglichen. Das Projekt vereint moderne Webtechnologien, Cloud-Infrastruktur und API-Integration zu einem skalierbaren, modular aufgebauten Gesamtsystem.
  
 ## Reflexion
 
 ### Persönliche Reflexion
 
-Insgesamt bin ich mit dem Verlauf des Projekts sehr zufrieden. Ich konnte alle geplanten Aufgaben erfolgreich umsetzen und habe ein funktionierendes System erstellt, welches Musikveranstaltungen über eine externe API abfragt. Die Projektumsetzung war allerdings anspruchsvoller als erwartet, insbesondere die technischen Herausforderungen beim Programmieren stellten sich als deutlich komplexer heraus. In diesen Phasen habe ich gezielt die Unterstützung des Dozenten genutzt, was mir sehr geholfen hat. Durch diese Zusammenarbeit konnte ich viele Hürden überwinden und mein technisches Verständnis weiter ausbauen.
-Die Zeitplanung war grundsätzlich gut, aber durch die ungeplanten Schwierigkeiten geriet ich zwischenzeitlich etwas unter Druck. In Zukunft möchte ich Pufferzeiten besser einplanen und potenzielle Risiken früher erkennen und berücksichtigen.
+Insgesamt bin ich mit dem Verlauf des Projekts sehr zufrieden. Ich konnte alle geplanten Aufgaben erfolgreich umsetzen und habe ein funktionierendes System erstellt, welches Musikveranstaltungen über eine externe API abfragt. Die Projektumsetzung war allerdings anspruchsvoller als erwartet, insbesondere die technischen Herausforderungen beim Programmieren stellten sich als deutlich komplexer heraus. In diesen Phasen habe ich gezielt die Unterstützung des Dozenten genutzt, was mir sehr geholfen hat. Durch diese Zusammenarbeit konnte ich viele Hürden überwinden und mein technisches Verständnis weiter ausbauen. Die Zeitplanung war grundsätzlich gut, aber durch die ungeplanten Schwierigkeiten geriet ich zwischenzeitlich etwas unter Druck. In Zukunft möchte ich Pufferzeiten besser einplanen und potenzielle Risiken früher erkennen und berücksichtigen.
 
 #### Herausforderungen und Lösungen
 
@@ -46,7 +43,7 @@ Während der Entwicklung traten mehrere technische Probleme auf, insbesondere be
 
 #### Analysen und Planung
 
-Zu Beginn des Projekts analysierte ich, wie ein Event-Microservice sinnvoll aufgebaut werden kann, um Benutzerinteraktionen mit einer externen Event-API zu ermöglichen. Ich habe Anforderungen definiert, die Datenquellen geprüft und frühzeitig entschieden, welche Funktionen (z.b Filterung, Nutzerfavoriten) umgesetzt werden sollen. Die Planung erfolgte orientiert SCRUM, die ich in Jira dokumentiert habe.
+Zu Beginn des Projekts analysierte ich, wie ein Event-Microservice sinnvoll aufgebaut werden kann, um Benutzerinteraktionen mit einer externen Event-API zu ermöglichen. Ich habe Anforderungen definiert, die Datenquellen geprüft und frühzeitig entschieden, welche Funktionen (z. B. Filterung, Nutzerfavoriten) umgesetzt werden sollen. Die Planung erfolgte orientiert SCRUM, die ich in Jira dokumentiert habe.
 
 #### Entscheidung
 
@@ -54,8 +51,7 @@ Für die Umsetzung entschied ich mich für eine REST-basierte Architektur, conta
 
 #### Umsetzung des Projektes
 
-Der Microservice wurde vollständig mit Flask umgesetzt und über Docker containerisiert. Er bietet eine grafische Benutzeroberfläche zur Eventsuche mit Filtermöglichkeiten (z.b nach Genre, Ort oder Künstler). Die Anbindung an die externe API und die Einbindung einer Nutzer-Datenbank waren zentrale Bestandteile.
-Während der Implementierung kam es zu mehreren Herausforderungen, insbesondere bei der Datenverarbeitung der externen API und der Synchronisation zwischen Backend und UI. Durch gezielte Recherche, Hilfestellung vom Dozenten und aktives Troubleshooting konnten diese Probleme gelöst werden.
+Der Microservice wurde vollständig mit Flask umgesetzt und über Docker containerisiert. Er bietet eine grafische Benutzeroberfläche zur Eventsuche mit Filtermöglichkeiten (z. B. nach Genre, Ort oder Künstler). Die Anbindung an die externe API und die Einbindung einer Nutzer-Datenbank waren zentrale Bestandteile. Während der Implementierung kam es zu mehreren Herausforderungen, insbesondere bei der Datenverarbeitung der externen API und der Synchronisation zwischen Backend und UI. Durch gezielte Recherche, Hilfestellung vom Dozenten und aktives Troubleshooting konnten diese Probleme gelöst werden.
 
 #### Optimierung
 
@@ -75,7 +71,7 @@ Ich habe viel über API-Integration, Docker-Containerisierung, Flask-Anwendungen
 
 #### Erweiterte Funktionalität
 
-In Zukunft könnten weitere Filteroptionen, z.b nach Preis oder Verfügbarkeit, ergänzt werden. Eine Spotify Einbindung wäre auch eine Möglichkeit um direkt in die Musik des Künstlers reinzuhören. Es könnte auch eine Google Maps integration eingebaut werden, die direkt die Eventlocation anzeigt.
+In Zukunft könnten weitere Filteroptionen, z. B. nach Preis oder Verfügbarkeit, ergänzt werden. Eine Spotify Einbindung wäre auch eine Möglichkeit um direkt in die Musik des Künstlers reinzuhören. Es könnte auch eine Google Maps integration eingebaut werden, die direkt die Eventlocation anzeigt.
 
 #### Skalierbarkeit und Performance
 

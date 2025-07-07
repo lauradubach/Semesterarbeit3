@@ -4,6 +4,10 @@ Kommen wir zur Umsetzung des Projektes. In diesem Teil wird genau beschrieben, w
 
 - [Teil 3 Realisieren](#teil-3-realisieren)
 - [Realisieren](#realisieren)
+  - [So funktionierts](#so-funktionierts)
+    - [Überblick](#überblick)
+    - [Komponenten im Detail](#komponenten-im-detail)
+      - [Zusammenspiel der Komponenten](#zusammenspiel-der-komponenten)
   - [Datenbank](#datenbank)
   - [Externe Ticketmaster API](#externe-ticketmaster-api)
   - [Github Secrets](#github-secrets)
@@ -15,9 +19,9 @@ Kommen wir zur Umsetzung des Projektes. In diesem Teil wird genau beschrieben, w
     - [Filterfunktionen](#filterfunktionen)
     - [Bereitstellung über CI/CD-Pipeline (AWS EC2)](#bereitstellung-über-cicd-pipeline-aws-ec2)
     - [Codebeispiele](#codebeispiele)
-    - [Aufgetretene Probleme](#aufgetretene-probleme)
-      - [Favorites hinzufügen:](#favorites-hinzufügen)
-      - [Migration in die Produktivumgebung:](#migration-in-die-produktivumgebung)
+  - [Aufgetretene Probleme](#aufgetretene-probleme)
+    - [Favorites hinzufügen](#favorites-hinzufügen)
+    - [Migration in die Produktivumgebung](#migration-in-die-produktivumgebung)
   - [Fallbacksolution](#fallbacksolution)
 - [Kontrollieren](#kontrollieren)
   - [Testing](#testing)
@@ -28,6 +32,56 @@ Kommen wir zur Umsetzung des Projektes. In diesem Teil wird genau beschrieben, w
 # Realisieren
 
 Nun wird die Realisierung beschrieben. Die Umsetzung der Arbeit wird gezeigt inklusive Bilder der Produktiven Umgebung.
+
+## So funktionierts
+
+### Überblick
+
+Der Microservice basiert auf Flask (Python) und ist in einem Docker-Container verpackt. Er verwendet MySQL als Datenbank und SQLAlchemy als ORM (Object-Relational Mapper). Die Anwendung wird über eine CI/CD-Pipeline automatisiert in die Cloud (AWS) deployed und ist dort über eine Elastic IP erreichbar.
+
+### Komponenten im Detail
+
+1. Backend (Flask + Python) Implementiert eine REST-API zur:
+- Benutzerregistrierung, Login und Logout (inkl. Token-basiertem Authentifizierungssystem).
+- Abfrage und Anzeige von Musik-Events über eine externe API.
+- Favorisierung von Events durch eingeloggte Benutzer (CRUD auf Favoriten).
+- Nutzt SQLAlchemy für den Datenbankzugriff und -mapping.
+
+2. Datenbank (MySQL) Speichert:
+- Benutzerinformationen.
+- Favorisierte Events der Benutzer.
+- Läuft auf einem separaten Container.
+
+3. Docker
+- Die Anwendung wird containerisiert, um eine einheitliche und portable Laufzeitumgebung zu gewährleisten.
+- Besteht aus einem Dockerfile und einer docker-compose.yml, um Backend und Datenbank zu verknüpfen.
+
+4. Externe Musik-Event-API
+- Der Microservice ruft auf Anfrage Eventdaten von der externen API (Ticketmaster API) ab.
+- Diese Daten werden im Backend verarbeitet und dem Frontend bzw. Benutzer zur Verfügung gestellt.
+
+5. CI/CD-Pipeline
+- Wird über GitHub Actions realisiert.
+
+Automatischer Ablauf:
+- Code Push ins Repository.
+- Pipeline baut das Docker-Image.
+- Image wird auf eine AWS EC2 Instanz deployed.
+- Services werden neu gestartet.
+
+6. Cloud Deployment (AWS EC2 + Elastic IP)
+- Eine EC2-Instanz dient als Host für die laufenden Container.
+- Die Anwendung wird dort über Docker ausgeführt.
+- Eine Elastic IP (statische IP-Adresse) macht den Service dauerhaft über das Internet erreichbar.
+ 
+#### Zusammenspiel der Komponenten
+
+- Der Benutzer greift über den Browser auf die Elastic IP zu.
+- Flask empfängt die HTTP-Anfrage und verarbeitet sie.
+- Bei Event-Abfragen wird die externe API kontaktiert.
+- Bei geschützten Endpunkten wird der Authentifizierungs-Token überprüft.
+- Daten werden ggf. aus der MySQL-Datenbank gelesen oder dorthin geschrieben.
+- Die CI/CD-Pipeline sorgt dafür, dass nach jedem Push automatisch die aktuellste Version in der Cloud läuft.
 
 ## Datenbank
 
@@ -117,9 +171,11 @@ Der gesamte Code, sowie die vollständige Projektstruktur sind im öffentlich ve
 
 Mein ganzer Code: [Produktionsumgebung](https://github.com/lauradubach/Produktionsumgebung.git)
 
-### Aufgetretene Probleme
+## Aufgetretene Probleme
 
-#### Favorites hinzufügen:
+Während des programmierens, gab es einige Hürden. Hier werden die grobsten Fehler kurz erläutert und der Lösungsweg beschrieben.
+
+### Favorites hinzufügen
 
 Als ich die Favoriten funktion hinzufügen wollte hatte ich einige Probleme und musste Troubleshooten. Hier sind einige Herausforderungen, die ich hatte:
 
@@ -143,7 +199,7 @@ Damit die bestehende Suche- und der Stern angeklickt bleibt, wenn man einen refr
 
 `<input type="hidden" name="next" value="{{ request.url }}">`
 
--> Auch im favorites/routes musste dies entsprechend ergänzt werden.
+Auch im favorites/routes musste dies entsprechend ergänzt werden.
 
 Ich musste Javascript und CSS integrieren, da beim Klick auf einen Stern, die Füllung sich nicht verändert hatte. Das Skript macht nichts anderes als: Den Klick abzufangen, den Server anzufragen (mit fetch) und den Stern einfärben (CSS-Klasse setzen)
 
@@ -190,7 +246,7 @@ Dies ist das Skript:
 </script>
 ```
 
-#### Migration in die Produktivumgebung:
+### Migration in die Produktivumgebung
 
 Die Seite über die erstellte Elastic IP konnte ich aufrufen, die Login Page erschien, sobald ich mich jedoch eingeloggt hatte, kam nichts mehr.
 
@@ -278,7 +334,7 @@ In diesen Tests wird die Funktionalität des entwickelten Musik Event Finders ge
 
 | Testfall | Erwartetes Ergebnis | Testresultat |
 | ---------| ------------------- | ------------ |
-| Tests der ganzen Umgebung | Alle Tests laufen erfolgreich durch. | Die Tests laufen alle durch, die Umgebung nun Produktiv geschalten werden: ![success_test](../Pictures/success_test.png) |
+| Tests der ganzen Umgebung | Alle Tests laufen erfolgreich durch. | Die Tests laufen alle durch, die Umgebung kann nun Produktiv geschalten werden: ![success_test](../Pictures/success_test.png) |
 | Lokaler Test der Website | Website startet und alle Funktionen funktionieren | Die Website kann erfolgreich aufgerufen werden, Registrierung User klappt, Login User klappt, Event Suche klappt, Eventfavoritisieren klappt. |
 | Pipline Testen | Pipline läuft erfolgreich durch | Alles läuft durch und die Pipline pushed erfolgreich auf die EC2 Instanz: ![Pipline](../Pictures/Pipline.png) |
 | SSH auf EC2 Instanz | SSH connection auf EC2 Instanz testen | Im Ordner .ssh mit dem Befehl 'ssh -i "eventfinder-key.pem" ec2-user@ec2-54-156-170-152.compute-1.amazonaws.com' gelingt der Zugriff: ![SSH](../Pictures/ssh_test.png) | 

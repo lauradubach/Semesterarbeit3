@@ -78,7 +78,7 @@ Er hatte noch ein paar Ideen, die ich umsetzten könnte:
 1. Risikomatrix
 2. Eine kurze reflexion im sprint review (wie ist es gelaufen, was könnte besser laufen)
 
-Das Gespräch verlauf super. All meine Fragen konnten beantwortet werden und Corrado konnte mir gute Tipps geben. Nun kann ich weiterarbeiten.
+Das Gespräch verlief gut. All meine Fragen konnten beantwortet werden und Corrado konnte mir gute Tipps geben. Nun kann ich weiterarbeiten.
 
 ## Sprint-Retrospektive 1
 
@@ -156,14 +156,14 @@ Folgende Fragen habe ich vorbereitet.
 2. Die Verlinkung der Sites sind momentan auf Github umgeleitet und nicht auf Github Pages, sollte ich sie auf Github Pages umleiten, damit alles nur dort verlinkt ist?
 3. Sind 2 Repos okey? Eines für die Umsetzung und eines für die Dokumentation?
 
-Er meinte es sei eine gute Idee, die Epics als Meilensteine zu definieren. Ich sollte sie jedoch noch nummerieren, damit es Übersichtlicher ist. Er wird Github selbst nicht anschauen, sondern hauptsächlich auf Github Pages die Arbeit bewerten. Deshalb ist es sinnvoll, dass die Verlinkung auf Github Pages funktioniert. Bezüglich den 2 Repositorys meinte er, dass diese auch gut sind, da er hauptsächlich die Dokumentation anschaut und Boris den praktischen Teil bewertet. So ist es übesichtlich und gut unterteilt. Im Teams Channel ist dies auch so abgelegt.
+Er meinte es sei eine gute Idee, die Epics als Meilensteine zu definieren. Ich sollte sie jedoch noch nummerieren, damit es Übersichtlicher ist. Er wird Github selbst nicht anschauen, sondern hauptsächlich auf Github Pages die Arbeit bewerten. Deshalb ist es sinnvoll, dass die Verlinkung auf Github Pages funktioniert. Bezüglich den 2 Repositorys meinte er, dass diese auch gut sind, da er hauptsächlich die Dokumentation anschaut und Boris den praktischen Teil bewertet. So ist es übersichtlich und gut unterteilt. Im Teams Channel ist dies auch so abgelegt.
 
-Er hatte noch eine paar Ideen, die ich umsetzten könne§:
+Er hatte noch eine paar Ideen, die ich umsetzten könnte:
 
 1. Bei der Sprintretrospektive eine Grafik zur Darstellung um den Text zu minimieren
 2. Bei den Meilensteinen eine nummerierung machen
 
-Das Gespräch verlief super. All meine Fragen konnten beantwortet werden und Corrado gab mir gute Tipps. Nun kann ich weiterarbeiten.
+Das Gespräch verlief gut. All meine Fragen konnten beantwortet werden und Corrado gab mir gute Tipps. Nun kann ich weiterarbeiten.
 
 ## Sprint-Retrospektive 2
 
