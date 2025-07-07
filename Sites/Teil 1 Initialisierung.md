@@ -61,9 +61,13 @@ In einer zunehmend vernetzten Welt sind personalisierte, ortsbezogene Event-Empf
 Die Herausforderung besteht darin, einen eigenständigen Microservice zu entwickeln.
 
 **Ambitioniert:** Die Entwicklung eines eigenständigen Services inklusive API-Anbindung, Filterlogik und Bereitstellung via REST ist anspruchsvoll, aber machbar.
+
 **Motivierend:** Persönliches Interesse an Musik, Event-Technologien und Microservices.
+
 **Organisiert:** APIs, Tools und Frameworks sind vorhanden oder beschaffbar.
+
 **Realistisch:** Umfang und Zielsetzungen sind im Rahmen der verfügbaren Zeit gut umsetzbar.
+
 **Echt:** Der Anwendungsfall ist realitätsnah und technologisch aktuell.
 
 ## Ziele
