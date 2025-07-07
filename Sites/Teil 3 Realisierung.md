@@ -60,10 +60,8 @@ Der Microservice basiert auf Flask (Python) und ist in einem Docker-Container ve
 - Der Microservice ruft auf Anfrage Eventdaten von der externen API (Ticketmaster API) ab.
 - Diese Daten werden im Backend verarbeitet und dem Frontend bzw. Benutzer zur Verfügung gestellt.
 
-5. CI/CD-Pipeline
+5. CI/CD-Pipeline Automatischer Ablauf:
 - Wird über GitHub Actions realisiert.
-
-Automatischer Ablauf:
 - Code Push ins Repository.
 - Pipeline baut das Docker-Image.
 - Image wird auf eine AWS EC2 Instanz deployed.
